@@ -2075,3 +2075,65 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.04.20-09.07.49:189][378]LogHttp: Warning: 00000256106BA400: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
 [2021.04.20-09.07.49:189][378]LogHttp: Warning: 00000256106BA400: libcurl info message cache 9 (Closing connection 19)
 [2021.04.20-09.07.49:189][378]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B8FCB3DED-47F1-FFAF-FD35-D18185F24FE9%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=6d2b1d9147bfe1b59ec651b51243c9a2%7C2b5f30495fbf4715bdb1d7cb575308ec%7C478608a1-d22b-4107-9a01-63221b5434f5&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.04.20-09.13.01:543][306]LogUObjectHash: Compacting FUObjectHashTables data took   2.33ms
+[2021.04.20-09.13.03:208][306]LogSavePackage: Moving '../../../../../../MyStudy/FUGAS/NigelsExpedition/NigelsExpedition/Saved/ThirdPersonExampleMap_Auto31E8920F142F567E985561DA01D94ADEA.tmp' to '../../../../../../MyStudy/FUGAS/NigelsExpedition/NigelsExpedition/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto3.umap'
+[2021.04.20-09.13.03:209][306]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 1.689
+[2021.04.20-09.13.03:209][306]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 1.689
+[2021.04.20-09.13.03:210][306]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/BluePrints/NigelGameMode_BP] ([1] browsable assets)...
+[2021.04.20-09.13.03:210][306]OBJ SavePackage: Finished generating thumbnails for package [/Game/BluePrints/NigelGameMode_BP]
+[2021.04.20-09.13.03:215][306]LogSavePackage: Moving '../../../../../../MyStudy/FUGAS/NigelsExpedition/NigelsExpedition/Saved/NigelGameMode_BP_Auto3561770004A317DD424875F825A9BB386.tmp' to '../../../../../../MyStudy/FUGAS/NigelsExpedition/NigelsExpedition/Saved/Autosaves/Game/BluePrints/NigelGameMode_BP_Auto3.uasset'
+[2021.04.20-09.13.03:215][306]LogFileHelpers: Auto-saving content packages took 0.006
+[2021.04.20-09.26.40:874][894]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.20-09.26.40:881][894]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.20-09.26.40:881][894]PIE: New page: PIE session: ThirdPersonExampleMap (Apr 20, 2021, 3:26:40 PM)
+[2021.04.20-09.26.40:881][894]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.04.20-09.26.40:893][894]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012167s)
+[2021.04.20-09.26.40:895][894]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.04.20-09.26.40:895][894]LogPlayLevel: PIE: World Init took: (0.002076s)
+[2021.04.20-09.26.40:895][894]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.014504s)
+[2021.04.20-09.26.40:920][894]LogUObjectHash: Compacting FUObjectHashTables data took   3.34ms
+[2021.04.20-09.26.40:923][894]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2021.04.20-09.26.40:923][894]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.20-09.26.40:923][894]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.20-09.26.40:923][894]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.20-09.26.40:923][894]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.20-09.26.40:923][894]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.20-09.26.40:923][894]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.20-09.26.40:923][894]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.20-09.26.40:923][894]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.20-09.26.40:923][894]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.20-09.26.40:923][894]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.20-09.26.40:925][894]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.20-09.26.40:925][894]LogAudioMixer: Display: 1: FrontRight
+[2021.04.20-09.26.40:959][894]LogAudioMixer: Display: Using Audio Device Динамики (Realtek(R) Audio)
+[2021.04.20-09.26.40:960][894]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.20-09.26.40:960][894]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.20-09.26.40:960][894]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.20-09.26.40:961][894]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.20-09.26.40:961][894]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.04.20-09.26.40:961][894]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.04.20-09.26.40:984][894]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.04.20-09.26.40:984][894]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.04.20-09.26.40:984][894]LogInit: FAudioDevice initialized.
+[2021.04.20-09.26.40:984][894]LogAudio: Display: Audio Device (ID: 9) registered with world 'ThirdPersonExampleMap'.
+[2021.04.20-09.26.40:997][894]LogLoad: Game class is 'NigelGameMode_BP_C'
+[2021.04.20-09.26.40:999][894]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2021.04.20-12.26.40
+[2021.04.20-09.26.40:999][894]LogWorld: Bringing up level for play took: 0.001092
+[2021.04.20-09.26.40:999][894]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2021.04.20-09.26.41:001][894]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.04.20-09.26.41:001][894]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.04.20-09.26.41:002][894]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.04.20-09.26.41:003][894]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.04.20-09.26.41:003][894]PIE: Server logged in
+[2021.04.20-09.26.41:004][894]PIE: Play in editor total start time 0.125 seconds.
+[2021.04.20-09.28.42:634][187]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.20-09.28.42:635][187]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.04.20-09.28.42:635][187]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.04.20-09.28.42:635][187]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.20-09.28.42:644][187]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.20-09.28.42:666][187]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.20-09.28.42:682][187]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.20-09.28.42:682][187]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.04.20-09.28.42:684][187]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.04.20-09.28.42:721][187]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2021.04.20-09.28.42:767][188]LogPlayLevel: Display: Destroying online subsystem :Context_16
