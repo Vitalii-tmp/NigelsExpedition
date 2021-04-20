@@ -1,0 +1,9 @@
+D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\Definitions.NigelsExpedition.h
+D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition\Nigel_GameMode_BP.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameMode.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameMode.generated.h
+D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\Nigel_GameMode_BP.generated.h

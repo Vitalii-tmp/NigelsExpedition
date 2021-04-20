@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "NigelsExpedition",
+			"Path": "D:\\MyStudy\\FUGAS\\NigelsExpedition\\NigelsExpedition\\Source\\NigelsExpedition.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "NigelsExpeditionEditor",
+			"Path": "D:\\MyStudy\\FUGAS\\NigelsExpedition\\NigelsExpedition\\Source\\NigelsExpeditionEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
