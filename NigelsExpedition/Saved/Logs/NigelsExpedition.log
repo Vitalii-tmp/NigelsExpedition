@@ -1061,3 +1061,29 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.04.22-08.38.24:621][789]LogHttp: Warning: 0000025BBCF85600: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
 [2021.04.22-08.38.24:621][789]LogHttp: Warning: 0000025BBCF85600: libcurl info message cache 9 (Closing connection 7)
 [2021.04.22-08.38.24:637][790]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B85148FE6-4594-DCDA-6E7D-0B849BFA35C5%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=6d2b1d9147bfe1b59ec651b51243c9a2%7C2b5f30495fbf4715bdb1d7cb575308ec%7C478608a1-d22b-4107-9a01-63221b5434f5&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B85148FE6-4594-DCDA-6E7D-0B849BFA35C5%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=6d2b1d9147bfe1b59ec651b51243c9a2%7C2b5f30495fbf4715bdb1d7cb575308ec%7C478608a1-d22b-4107-9a01-63221b5434f5&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: request failed, libcurl error: 35 (SSL connect error)
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 1 (  Trying 54.85.15.120...)
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (54.85.15.120) port 443 (#8))
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 6 (SSL re-using session ID)
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.04.22-08.39.24:900][ 67]LogHttp: Warning: 0000025BC66A3200: libcurl info message cache 9 (Closing connection 8)
+[2021.04.22-08.39.25:236][ 68]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B85148FE6-4594-DCDA-6E7D-0B849BFA35C5%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=6d2b1d9147bfe1b59ec651b51243c9a2%7C2b5f30495fbf4715bdb1d7cb575308ec%7C478608a1-d22b-4107-9a01-63221b5434f5&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B85148FE6-4594-DCDA-6E7D-0B849BFA35C5%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=6d2b1d9147bfe1b59ec651b51243c9a2%7C2b5f30495fbf4715bdb1d7cb575308ec%7C478608a1-d22b-4107-9a01-63221b5434f5&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: request failed, libcurl error: 35 (SSL connect error)
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 1 (  Trying 54.85.148.225...)
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (54.85.148.225) port 443 (#9))
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 6 (SSL re-using session ID)
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.04.22-08.40.25:028][246]LogHttp: Warning: 0000025BC66A0100: libcurl info message cache 9 (Closing connection 9)
+[2021.04.22-08.40.25:029][246]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B85148FE6-4594-DCDA-6E7D-0B849BFA35C5%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=6d2b1d9147bfe1b59ec651b51243c9a2%7C2b5f30495fbf4715bdb1d7cb575308ec%7C478608a1-d22b-4107-9a01-63221b5434f5&AppEnvironment=datacollector-binary&UploadType=eteventstream
