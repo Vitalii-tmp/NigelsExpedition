@@ -1,12 +1,13 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\MyStudy\FUGAS\NigelsExpedition).
+  Creating makefile for NigelsExpeditionEditor (game project files are newer)
   Building NigelsExpeditionEditor...
   Using Visual Studio 2019 14.28.29914 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Building 4 actions with 8 processes...
     [1/4] Nigel.cpp
-    [2/4] UE4Editor-NigelsExpedition-0010.lib
-       Creating library D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0010.lib and object D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0010.exp
-    [3/4] UE4Editor-NigelsExpedition-0010.dll
-       Creating library D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0010.suppressed.lib and object D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0010.suppressed.exp
+    [2/4] UE4Editor-NigelsExpedition-0013.lib
+       Creating library D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0013.lib and object D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0013.exp
+    [3/4] UE4Editor-NigelsExpedition-0013.dll
+       Creating library D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0013.suppressed.lib and object D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0013.suppressed.exp
     [4/4] NigelsExpeditionEditor.target
-  Total time in Parallel executor: 4.20 seconds
-  Total execution time: 5.08 seconds
+  Total time in Parallel executor: 322.16 seconds
+  Total execution time: 325.21 seconds
