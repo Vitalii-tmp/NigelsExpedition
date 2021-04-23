@@ -17,7 +17,7 @@ ANigel::ANigel()
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
 
-	//Allow character movement to rotate inte direction where it is moving
+	//Allow character movement to rotate into direction where it is moving
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
 
@@ -31,7 +31,7 @@ ANigel::ANigel()
 	CameraBoom->SetupAttachment(RootComponent);
 
 	//Camera distance to player
-	CameraBoom->TargetArmLength = 800.0f;
+	CameraBoom->TargetArmLength = 1100.0f;
 	CameraBoom->bUsePawnControlRotation = true;
 
 	//CreateCamera
@@ -39,7 +39,8 @@ ANigel::ANigel()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
 
-	bDead=false;
+	bDead = false;
+	
 }
 
 void ANigel::MoveForward(float Axis)
@@ -92,8 +93,8 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	//camera turning
-	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
-	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
+	//PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
+	//PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 
 	//Jumping
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
