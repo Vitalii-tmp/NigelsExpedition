@@ -13,11 +13,11 @@ ANigel::ANigel()
 	GetCapsuleComponent()->InitCapsuleSize(42.0f, 96.0f);
 
 	//allow camera move
-	bUseControllerRotationPitch = false;
-	bUseControllerRotationYaw = false;
-	bUseControllerRotationRoll = false;
+	//bUseControllerRotationPitch = false;
+	//bUseControllerRotationYaw = false;
+	//bUseControllerRotationRoll = false;
 
-	//Allow character movement to rotate inte direction where it is moving
+	//Allow character movement to rotate into direction where it is moving
 	GetCharacterMovement()->bOrientRotationToMovement = true;
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
 
@@ -31,15 +31,16 @@ ANigel::ANigel()
 	CameraBoom->SetupAttachment(RootComponent);
 
 	//Camera distance to player
-	CameraBoom->TargetArmLength = 800.0f;
+	CameraBoom->TargetArmLength = 1100.0f;
 	CameraBoom->bUsePawnControlRotation = true;
 
 	//CreateCamera
 	FollowCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
-	FollowCamera->bUsePawnControlRotation = false;
+	FollowCamera->bUsePawnControlRotation = true;
 
-	bDead=false;
+	bDead = false;
+	
 }
 
 void ANigel::MoveForward(float Axis)
