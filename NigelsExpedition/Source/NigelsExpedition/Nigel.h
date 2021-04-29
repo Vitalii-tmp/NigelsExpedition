@@ -33,7 +33,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UCameraComponent* FollowCamera;
-	
+
+	UPROPERTY(VisibleAnywhere, Category = "Trigger Capsule")
+		class UCapsuleComponent* TriggerCapsule;
 
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
@@ -42,6 +44,8 @@ public:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	void OnAction();
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -49,7 +53,15 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	UFUNCTION()
+		void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+			int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
+	UFUNCTION()
+		void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+			int32 OtherBodyIndex);
+
+	class ADoorActor* DoorExit;
 private:
 	//dead check
 	bool bDead;

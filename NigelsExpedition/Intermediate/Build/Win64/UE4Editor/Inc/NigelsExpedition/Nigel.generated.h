@@ -8,14 +8,27 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef NIGELSEXPEDITION_Nigel_generated_h
 #error "Nigel.generated.h already included, missing '#pragma once' in Nigel.h"
 #endif
 #define NIGELSEXPEDITION_Nigel_generated_h
 
 #define NigelsExpedition_Source_NigelsExpedition_Nigel_h_24_SPARSE_DATA
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_24_RPC_WRAPPERS
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_24_RPC_WRAPPERS_NO_PURE_DECLS
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_24_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnOverlapEnd); \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnOverlapEnd); \
+	DECLARE_FUNCTION(execOnOverlapBegin);
+
+
 #define NigelsExpedition_Source_NigelsExpedition_Nigel_h_24_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesANigel(); \
