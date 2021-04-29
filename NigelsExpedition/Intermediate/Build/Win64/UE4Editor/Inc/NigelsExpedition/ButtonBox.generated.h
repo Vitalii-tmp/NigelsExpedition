@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define NIGELSEXPEDITION_ButtonBox_generated_h
 
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_SPARSE_DATA
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_RPC_WRAPPERS
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_RPC_WRAPPERS_NO_PURE_DECLS
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_INCLASS_NO_PURE_DECLS \
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_SPARSE_DATA
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_RPC_WRAPPERS
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAButtonBox(); \
 	friend struct Z_Construct_UClass_AButtonBox_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AButtonBox)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_INCLASS \
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAButtonBox(); \
 	friend struct Z_Construct_UClass_AButtonBox_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AButtonBox)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_STANDARD_CONSTRUCTORS \
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AButtonBox(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AButtonBox) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_ENHANCED_CONSTRUCTORS \
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AButtonBox(AButtonBox&&); \
@@ -58,28 +58,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AButtonBox); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AButtonBox)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_PRIVATE_PROPERTY_OFFSET
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_11_PROLOG
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_GENERATED_BODY_LEGACY \
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_PRIVATE_PROPERTY_OFFSET
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_12_PROLOG
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_PRIVATE_PROPERTY_OFFSET \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_SPARSE_DATA \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_RPC_WRAPPERS \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_INCLASS \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_STANDARD_CONSTRUCTORS \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_PRIVATE_PROPERTY_OFFSET \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_SPARSE_DATA \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_RPC_WRAPPERS \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_INCLASS \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_GENERATED_BODY \
+#define NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_PRIVATE_PROPERTY_OFFSET \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_SPARSE_DATA \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_INCLASS_NO_PURE_DECLS \
-	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_14_ENHANCED_CONSTRUCTORS \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_PRIVATE_PROPERTY_OFFSET \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_SPARSE_DATA \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_INCLASS_NO_PURE_DECLS \
+	NigelsExpedition_Source_NigelsExpedition_ButtonBox_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

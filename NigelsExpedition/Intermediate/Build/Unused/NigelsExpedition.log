@@ -1,7 +1,29 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\MyStudy\FUGAS\NigelsExpedition).
+  Invalidating makefile for NigelsExpeditionEditor (NigelsExpedition.Build.cs modified)
+  Parsing headers for NigelsExpeditionEditor
+    Running UnrealHeaderTool "D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\NigelsExpedition.uproject" "D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\NigelsExpeditionEditor\Development\NigelsExpeditionEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\vital\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for NigelsExpeditionEditor in 4.2747231 seconds
   Building NigelsExpeditionEditor...
   Using Visual Studio 2019 14.28.29914 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
-  Building 1 action with 8 processes...
-    [1/1] NigelsExpeditionEditor.target
-  Total time in Parallel executor: 0.21 seconds
-  Total execution time: 0.99 seconds
+  Building 17 actions with 8 processes...
+    [1/17] NigelsExpedition.cpp
+    [2/17] Nigel_GameMode_BP.cpp
+    [3/17] NigelsExpeditionGameMode.cpp
+    [4/17] NigelsExpedition.init.gen.cpp
+    [5/17] ButtonBox.gen.cpp
+    [6/17] NigelsExpeditionCharacter.cpp
+    [7/17] NigelsExpeditionCharacter.gen.cpp
+    [8/17] NigelsExpeditionGameMode.gen.cpp
+    [9/17] Nigel_GameMode_BP.gen.cpp
+    [10/17] ButtonBox.cpp
+    [11/17] Nigel.cpp
+    [12/17] Nigel.gen.cpp
+    [13/17] BoxTrigger.gen.cpp
+    [14/17] BoxTrigger.cpp
+    [15/17] UE4Editor-NigelsExpedition-0008.lib
+       Creating library D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0008.lib and object D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0008.exp
+    [16/17] UE4Editor-NigelsExpedition-0008.dll
+       Creating library D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0008.suppressed.lib and object D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0008.suppressed.exp
+    [17/17] NigelsExpeditionEditor.target
+  Total time in Parallel executor: 12.48 seconds
+  Total execution time: 19.52 seconds

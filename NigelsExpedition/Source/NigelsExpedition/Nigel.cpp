@@ -22,10 +22,10 @@ ANigel::ANigel()
 	GetCharacterMovement()->RotationRate = FRotator(0.0f, 540.0f, 0.0f);
 
 	//Jump velocity
-	GetCharacterMovement()->JumpZVelocity = 600.0f;
+	//GetCharacterMovement()->JumpZVelocity = 600.0f;
 
 	//how we can control player in air
-	GetCharacterMovement()->AirControl = 0.2f;
+	//GetCharacterMovement()->AirControl = 0.2f;
 
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
@@ -97,8 +97,8 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 
 	//Jumping
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	//PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	//PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	//Moving forward
 	PlayerInputComponent->BindAxis("MoveForward", this, &ANigel::MoveForward);

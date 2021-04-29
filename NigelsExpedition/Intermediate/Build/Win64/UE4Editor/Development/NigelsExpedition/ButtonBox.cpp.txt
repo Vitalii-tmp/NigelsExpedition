@@ -4,6 +4,10 @@ D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\Component
 D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
 D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
 D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/TriggerBox.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/TriggerBase.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TriggerBase.generated.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\TriggerBox.generated.h
 D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\ButtonBox.generated.h
 D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition\Nigel.h
 D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
