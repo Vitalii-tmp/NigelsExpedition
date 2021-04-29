@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NigelsExpedition.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A132B642-EB5C-48E2-9FC5-829389BA5255}</UniqueIdentifier>
+      <UniqueIdentifier>{07FD1854-9D29-4551-850A-8F679330E19E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NigelsExpedition.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{1D581ED3-F441-4948-9223-299C637FEC38}</UniqueIdentifier>
+      <UniqueIdentifier>{F5658387-FDFF-49D6-827C-64B7A159C601}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NigelsExpedition">
-      <UniqueIdentifier>{6A0C1B5A-85DB-456C-871D-934563EC63DC}</UniqueIdentifier>
+      <UniqueIdentifier>{5D1CDBA1-CCF0-45A5-B106-64E463791F26}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NigelsExpedition\BoxTrigger.cpp">
       <Filter>Source\NigelsExpedition</Filter>
@@ -42,6 +42,12 @@
       <Filter>Source\NigelsExpedition</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NigelsExpedition\ButtonBox.h">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NigelsExpedition\DoorActor.cpp">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NigelsExpedition\DoorActor.h">
       <Filter>Source\NigelsExpedition</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NigelsExpedition\Nigel.cpp">
