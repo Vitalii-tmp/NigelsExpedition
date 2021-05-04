@@ -62,6 +62,7 @@ public:
 			int32 OtherBodyIndex);
 
 	class ADoorActor* DoorExit;
+	class AMapActor* MapLevels;
 private:
 	//dead check
 	bool bDead;

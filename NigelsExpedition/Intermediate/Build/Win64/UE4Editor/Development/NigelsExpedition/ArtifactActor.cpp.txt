@@ -1,0 +1,3 @@
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\Definitions.NigelsExpedition.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition\ArtifactActor.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\ArtifactActor.generated.h

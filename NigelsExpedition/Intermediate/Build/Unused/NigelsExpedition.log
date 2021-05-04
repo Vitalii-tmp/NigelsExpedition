@@ -1,8 +1,4 @@
 ﻿  Using 'git status' to determine working set for adaptive non-unity build (E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition).
-  Deleted hot-reload file: E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Binaries\Win64\UE4Editor-NigelsExpedition-0019.dll
-  Deleted hot-reload file: E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Binaries\Win64\UE4Editor-NigelsExpedition-0020.dll
-  Deleted hot-reload file: E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0019.lib
-  Deleted hot-reload file: E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0020.lib
   Building NigelsExpeditionEditor...
   Using Visual Studio 2019 14.28.29336 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
   Distributing 4 actions to XGE
@@ -13,12 +9,12 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  DoorActor.cpp (1:03.17 at +0:00)
-  UE4Editor-NigelsExpedition.dll (0:01.04 at +1:03)
-     Creating library E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition.suppressed.lib and object E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition.suppressed.exp
-  UE4Editor-NigelsExpedition.lib (0:00.46 at +1:04)
-     Creating library E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition.lib and object E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition.exp
-  NigelsExpeditionEditor.target (0:00.29 at +1:04)
+  Nigel.cpp (1:13.71 at +0:00)
+  UE4Editor-NigelsExpedition-0027.lib (0:01.17 at +1:13)
+     Creating library E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0027.lib and object E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0027.exp
+  UE4Editor-NigelsExpedition-0027.dll (0:03.70 at +1:14)
+     Creating library E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0027.suppressed.lib and object E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0027.suppressed.exp
+  NigelsExpeditionEditor.target (0:01.00 at +1:18)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -26,5 +22,5 @@
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 65,30 seconds
-  Total execution time: 69,32 seconds
+  Total time in XGE executor: 79,81 seconds
+  Total execution time: 80,99 seconds

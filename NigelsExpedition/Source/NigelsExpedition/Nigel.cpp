@@ -1,8 +1,11 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#define print(text) if(GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Purple, text)
+#define printFString(text, fstring) if(GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Purple, FString::Printf(Text(text), fstring ))
+
 
 #include "Nigel.h"
-
+#include "MapActor.h"
 #include "DoorActor.h"
 
 // Sets default values
@@ -52,6 +55,7 @@ ANigel::ANigel()
 	TriggerCapsule->OnComponentEndOverlap.AddDynamic(this, &ANigel::OnOverlapEnd);
 
 	DoorExit = NULL;
+	MapLevels = NULL;
 }
 
 void ANigel::MoveForward(float Axis)
@@ -126,6 +130,11 @@ void ANigel::OnAction()
 	{
 		DoorExit->ExitGame();
 	}
+
+	if(MapLevels)
+	{
+		MapLevels->LoadLevel();
+	}
 }
 
 void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
@@ -134,6 +143,13 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(ADoorActor::StaticClass()))
 	{
 		DoorExit = Cast<ADoorActor>(OtherActor);
+		print("On door");
+	}
+
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AMapActor::StaticClass()))
+	{
+		MapLevels = Cast<AMapActor>(OtherActor);
+		print("On map");
 	}
 }
 
@@ -143,5 +159,6 @@ void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 	if (OtherActor && OtherActor != this && OtherComp)
 	{
 		DoorExit = NULL;
+		MapLevels = NULL;
 	}
 }
