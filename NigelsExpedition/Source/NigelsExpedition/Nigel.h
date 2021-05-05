@@ -63,6 +63,7 @@ public:
 
 	class ADoorActor* DoorExit;
 	class AMapActor* MapLevels;
+	class AArtifactActor* Artifacts;
 private:
 	//dead check
 	bool bDead;

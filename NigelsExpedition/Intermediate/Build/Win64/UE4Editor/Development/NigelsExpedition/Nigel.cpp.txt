@@ -134,3 +134,5 @@ E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\Nigel
 E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\MapActor.generated.h
 E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition\DoorActor.h
 E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\DoorActor.generated.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition\ArtifactActor.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\ArtifactActor.generated.h

@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeNigelsExpedition_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xCF377641,
+				0xC8E2FAF9,
 				0xAF5605FC,
 				METADATA_PARAMS(nullptr, 0)
 			};

@@ -7,6 +7,7 @@
 #include "Nigel.h"
 #include "MapActor.h"
 #include "DoorActor.h"
+#include "ArtifactActor.h"
 
 // Sets default values
 ANigel::ANigel()
@@ -56,6 +57,7 @@ ANigel::ANigel()
 
 	DoorExit = NULL;
 	MapLevels = NULL;
+	Artifacts = NULL;
 }
 
 void ANigel::MoveForward(float Axis)
@@ -151,6 +153,12 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 		MapLevels = Cast<AMapActor>(OtherActor);
 		print("On map");
 	}
+
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AArtifactActor::StaticClass()))
+	{
+		Artifacts = Cast<AArtifactActor>(OtherActor);
+		print("On artifacts");
+	}
 }
 
 void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
@@ -160,5 +168,6 @@ void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 	{
 		DoorExit = NULL;
 		MapLevels = NULL;
+		Artifacts = NULL;
 	}
 }
