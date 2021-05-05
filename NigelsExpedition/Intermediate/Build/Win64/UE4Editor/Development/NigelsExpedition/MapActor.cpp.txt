@@ -1,0 +1,18 @@
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\Definitions.NigelsExpedition.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition\MapActor.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\MapActor.generated.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h

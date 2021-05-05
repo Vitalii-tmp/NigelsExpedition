@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NigelsExpedition.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{A132B642-EB5C-48E2-9FC5-829389BA5255}</UniqueIdentifier>
+      <UniqueIdentifier>{89ACC9C2-BDE3-4F90-BC55-6F2CB913D21D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NigelsExpedition.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,9 @@
     <None Include="..\..\Source\NigelsExpeditionEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\NigelsExpedition.sln.DotSettings.user" />
     <Filter Include="Config">
-      <UniqueIdentifier>{1D581ED3-F441-4948-9223-299C637FEC38}</UniqueIdentifier>
+      <UniqueIdentifier>{6268E1D3-F936-4285-A9AB-7E13DB576345}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +31,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NigelsExpedition">
-      <UniqueIdentifier>{6A0C1B5A-85DB-456C-871D-934563EC63DC}</UniqueIdentifier>
+      <UniqueIdentifier>{966356CA-DE52-409C-960F-24C0D76F7C32}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\NigelsExpedition\ArtifactActor.cpp">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NigelsExpedition\ArtifactActor.h">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\NigelsExpedition\BoxTrigger.cpp">
       <Filter>Source\NigelsExpedition</Filter>
     </ClCompile>
@@ -42,6 +49,18 @@
       <Filter>Source\NigelsExpedition</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NigelsExpedition\ButtonBox.h">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NigelsExpedition\DoorActor.cpp">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NigelsExpedition\DoorActor.h">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NigelsExpedition\MapActor.cpp">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NigelsExpedition\MapActor.h">
       <Filter>Source\NigelsExpedition</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NigelsExpedition\Nigel.cpp">
@@ -75,6 +94,12 @@
       <Filter>Source\NigelsExpedition</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NigelsExpedition\Nigel_GameMode_BP.h">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NigelsExpedition\OptionsActor.cpp">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NigelsExpedition\OptionsActor.h">
       <Filter>Source\NigelsExpedition</Filter>
     </ClInclude>
   </ItemGroup>
