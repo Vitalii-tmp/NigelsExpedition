@@ -15860,7 +15860,10 @@
 				"Engine",
 				"InputCore",
 				"HeadMountedDisplay",
-				"LevelSequence"
+				"LevelSequence",
+				"UMG",
+				"Slate",
+				"SlateCore"
 			],
 			"PrivateDependencyModules": [
 				"MovieScene",
