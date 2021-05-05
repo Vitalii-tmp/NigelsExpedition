@@ -1,7 +1,15 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#define print(text) if(GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Purple, text)
+#define printFString(text, fstring) if(GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Purple, FString::Printf(Text(text), fstring ))
+
 
 #include "Nigel.h"
+#include "MapActor.h"
+#include "DoorActor.h"
+#include "ArtifactActor.h"
+#include "OptionsActor.h"
+#include "Blueprint/UserWidget.h"
 
 // Sets default values
 ANigel::ANigel()
@@ -40,7 +48,19 @@ ANigel::ANigel()
 	FollowCamera->bUsePawnControlRotation = true;
 
 	bDead = false;
-	
+
+	TriggerCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Trigger Capsule"));
+	TriggerCapsule->InitCapsuleSize(42.f, 96.f);
+	TriggerCapsule->SetCollisionProfileName(TEXT("Trigger"));
+	TriggerCapsule->SetupAttachment(RootComponent);
+
+	TriggerCapsule->OnComponentBeginOverlap.AddDynamic(this, &ANigel::OnOverlapBegin);
+	TriggerCapsule->OnComponentEndOverlap.AddDynamic(this, &ANigel::OnOverlapEnd);
+
+	DoorExit = NULL;
+	MapLevels = NULL;
+	Artifacts = NULL;
+	Options = NULL;
 }
 
 void ANigel::MoveForward(float Axis)
@@ -77,7 +97,29 @@ void ANigel::MoveRight(float Axis)
 void ANigel::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	if (HelpWidgetClass)
+	{
+		DoorWidget = CreateWidget<UUserWidget>(GetWorld(), HelpWidgetClass);
+		/*DoorWidget->GetWidgetFromName("Image_door")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Hidden);*/
+
+		if (DoorWidget)
+		{
+			DoorWidget->AddToViewport();
+		}
+
+	}
+
+	if(MapMenuWidgetClass)
+	{
+		MapWidget = CreateWidget<UUserWidget>(GetWorld(), MapMenuWidgetClass);;
+		if(MapWidget)
+		{
+			MapWidget->AddToViewport();
+		}
+	}
 }
 
 // Called every frame
@@ -96,6 +138,8 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 
+	PlayerInputComponent->BindAction("ActionE", IE_Released, this, &ANigel::OnAction);
+
 	//Jumping
 	//PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	//PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
@@ -107,3 +151,68 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("MoveRight", this, &ANigel::MoveRight);
 }
 
+void ANigel::OnAction()
+{
+	if (DoorExit)
+	{
+		DoorExit->ExitGame();
+	}
+
+	if(MapLevels)
+	{
+		MapWidget->GetWidgetFromName("Image_map")->SetVisibility(ESlateVisibility::Visible);
+	}
+}
+
+void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(ADoorActor::StaticClass()))
+	{
+		DoorExit = Cast<ADoorActor>(OtherActor);
+		//print("On door");
+
+		DoorWidget->GetWidgetFromName("text_door")->SetVisibility(ESlateVisibility::Visible);
+	}
+
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AMapActor::StaticClass()))
+	{
+		MapLevels = Cast<AMapActor>(OtherActor);
+		//print("On map");
+
+		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Visible);
+	}
+
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AArtifactActor::StaticClass()))
+	{
+		Artifacts = Cast<AArtifactActor>(OtherActor);
+		//print("On artifacts");
+
+		DoorWidget->GetWidgetFromName("text_artifacts")->SetVisibility(ESlateVisibility::Visible);
+	}
+
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AOptionsActor::StaticClass()))
+	{
+		Options = Cast<AOptionsActor>(OtherActor);
+		//print("On options");
+		
+		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Visible);
+	}
+}
+
+void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
+	int32 OtherBodyIndex)
+{
+	if (OtherActor && OtherActor != this && OtherComp)
+	{
+		DoorExit = NULL;
+		MapLevels = NULL;
+		Artifacts = NULL;
+		Options = NULL;
+		
+		DoorWidget->GetWidgetFromName("text_door")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_artifacts")->SetVisibility(ESlateVisibility::Hidden);
+	}
+}
