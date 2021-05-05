@@ -1184,3 +1184,544 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.05.05-11.43.47:173][ 60]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
 [2021.05.05-11.43.47:194][ 60]LogUObjectHash: Compacting FUObjectHashTables data took   2.77ms
 [2021.05.05-11.43.47:219][ 61]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2021.05.05-11.48.31:785][331]LogRenderer: Reallocating scene render targets to support 1540x828 Format 10 NumSamples 1 (Frame:4055).
+[2021.05.05-11.48.38:572][398]Cmd: SELECT NONE
+[2021.05.05-11.48.43:404][467]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.05-11.48.43:420][467]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.05-11.48.43:420][467]PIE: New page: PIE session: MenuMap (5 мая 2021 г., 17:48:43)
+[2021.05.05-11.48.43:420][467]LogPlayLevel: Creating play world package: /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.48.43:434][467]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014222s)
+[2021.05.05-11.48.43:436][467]LogAIModule: Creating AISystem for world MenuMap
+[2021.05.05-11.48.43:436][467]LogPlayLevel: PIE: World Init took: (0.001812s)
+[2021.05.05-11.48.43:436][467]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu/MenuMap.MenuMap to /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap (0.016252s)
+[2021.05.05-11.48.43:460][467]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
+[2021.05.05-11.48.43:464][467]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2021.05.05-11.48.43:464][467]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.05-11.48.43:464][467]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.05-11.48.43:464][467]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.05-11.48.43:464][467]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.05-11.48.43:464][467]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.05-11.48.43:464][467]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.05-11.48.43:464][467]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.05-11.48.43:464][467]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.05-11.48.43:464][467]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.05-11.48.43:464][467]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.05-11.48.43:467][467]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.05-11.48.43:467][467]LogAudioMixer: Display: 1: FrontRight
+[2021.05.05-11.48.43:476][467]LogAudioMixer: Display: Using Audio Device Динамики (Устройство с поддержкой High Definition Audio)
+[2021.05.05-11.48.43:477][467]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.05-11.48.43:477][467]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.05-11.48.43:477][467]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.05-11.48.43:477][467]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.05-11.48.43:477][467]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.05-11.48.43:477][467]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.05-11.48.43:491][467]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.05-11.48.43:491][467]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.05-11.48.43:491][467]LogInit: FAudioDevice initialized.
+[2021.05.05-11.48.43:491][467]LogAudio: Display: Audio Device (ID: 7) registered with world 'MenuMap'.
+[2021.05.05-11.48.43:499][467]LogLoad: Game class is 'NigelGameMode_BP_C'
+[2021.05.05-11.48.43:503][467]LogWorld: Bringing World /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap up for play (max tick rate 60) at 2021.05.05-14.48.43
+[2021.05.05-11.48.43:504][467]LogWorld: Bringing up level for play took: 0.004538
+[2021.05.05-11.48.43:504][467]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2021.05.05-11.48.43:506][467]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.48.43:506][467]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.48.43:506][467]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.48.43:509][467]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.48.43:509][467]PIE: Server logged in
+[2021.05.05-11.48.43:510][467]PIE: Play in editor total start time 0,09 seconds.
+[2021.05.05-11.48.54:942][704]Cmd: LevelEditor.ToggleImmersive
+[2021.05.05-11.49.17:872][928]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.49.17:872][928]LogWorld: BeginTearingDown for /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.49.17:873][928]LogWorld: UWorld::CleanupWorld for MenuMap, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.49.17:874][928]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.49.18:168][928]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.05-11.49.18:177][928]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.49.18:202][928]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.05-11.49.18:202][928]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.49.18:203][928]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.49.18:219][928]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.49.18:222][928]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2021.05.05-11.49.18:234][929]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2021.05.05-11.50.09:840][807]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Widgets/MapMenu_Widget.MapMenu_Widget
+[2021.05.05-11.50.13:560][848]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-11.50.13:670][848]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-11.50.13:675][848]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.50.13:676][848]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.50.13:695][848]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.50.13:696][848]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.50.15:555][881]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Widgets/MainMenu_Widget.MainMenu_Widget
+[2021.05.05-11.50.44:013][327]BlueprintLog: New page: Compile MainMenu_Widget
+[2021.05.05-11.50.44:112][327]LogUObjectHash: Compacting FUObjectHashTables data took   5.17ms
+[2021.05.05-11.50.48:668][400]LogSavePackage: Moving '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/MainMenu_WidgetF7B42BBA496D87482FABD4A9D66D8E5F.tmp' to '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Content/Widgets/MainMenu_Widget.uasset'
+[2021.05.05-11.50.48:697][400]AssetCheck: New page: Asset Save: MainMenu_Widget
+[2021.05.05-11.50.48:697][400]LogContentValidation: Display: Validating WidgetBlueprint /Game/Widgets/MainMenu_Widget.MainMenu_Widget
+[2021.05.05-11.50.50:384][430]LogSlate: Window 'MainMenu_Widget' being destroyed
+[2021.05.05-11.50.50:496][430]LogSlate: Window 'MainMenu_Widget' being destroyed
+[2021.05.05-11.50.50:500][430]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.50.50:500][430]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.50.50:509][430]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.50.50:509][430]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.50.53:630][486]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.05-11.50.53:650][486]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.05-11.50.53:650][486]PIE: New page: PIE session: MenuMap (5 мая 2021 г., 17:50:53)
+[2021.05.05-11.50.53:650][486]LogPlayLevel: Creating play world package: /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.50.53:672][486]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022612s)
+[2021.05.05-11.50.53:675][486]LogAIModule: Creating AISystem for world MenuMap
+[2021.05.05-11.50.53:675][486]LogPlayLevel: PIE: World Init took: (0.002982s)
+[2021.05.05-11.50.53:676][486]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu/MenuMap.MenuMap to /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap (0.025976s)
+[2021.05.05-11.50.53:759][486]LogUObjectHash: Compacting FUObjectHashTables data took   4.31ms
+[2021.05.05-11.50.53:760][486]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2021.05.05-11.50.53:760][486]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.05-11.50.53:760][486]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.05-11.50.53:760][486]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.05-11.50.53:760][486]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.05-11.50.53:760][486]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.05-11.50.53:760][486]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.05-11.50.53:760][486]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.05-11.50.53:760][486]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.05-11.50.53:761][486]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.05-11.50.53:761][486]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.05-11.50.53:763][486]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.05-11.50.53:763][486]LogAudioMixer: Display: 1: FrontRight
+[2021.05.05-11.50.53:772][486]LogAudioMixer: Display: Using Audio Device Динамики (Устройство с поддержкой High Definition Audio)
+[2021.05.05-11.50.53:772][486]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.05-11.50.53:772][486]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.05-11.50.53:772][486]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.05-11.50.53:772][486]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.05-11.50.53:773][486]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.05-11.50.53:773][486]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.05-11.50.53:787][486]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.05-11.50.53:787][486]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.05-11.50.53:787][486]LogInit: FAudioDevice initialized.
+[2021.05.05-11.50.53:787][486]LogAudio: Display: Audio Device (ID: 8) registered with world 'MenuMap'.
+[2021.05.05-11.50.53:792][486]LogLoad: Game class is 'NigelGameMode_BP_C'
+[2021.05.05-11.50.53:797][486]LogWorld: Bringing World /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap up for play (max tick rate 60) at 2021.05.05-14.50.53
+[2021.05.05-11.50.53:797][486]LogWorld: Bringing up level for play took: 0.003683
+[2021.05.05-11.50.53:797][486]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2021.05.05-11.50.53:799][486]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.50.53:799][486]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.50.53:799][486]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.50.53:802][486]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.50.53:802][486]PIE: Server logged in
+[2021.05.05-11.50.53:802][486]PIE: Play in editor total start time 0,154 seconds.
+[2021.05.05-11.50.56:332][537]Cmd: LevelEditor.ToggleImmersive
+[2021.05.05-11.51.16:653][738]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.51.16:653][738]LogWorld: BeginTearingDown for /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.51.16:653][738]LogWorld: UWorld::CleanupWorld for MenuMap, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.51.16:655][738]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.51.16:923][738]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.05-11.51.16:928][738]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.51.16:945][738]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.51.16:946][738]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.51.16:947][738]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.51.16:965][738]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2021.05.05-11.51.16:992][739]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2021.05.05-11.54.52:119][567]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Widgets/MainMenu_Widget.MainMenu_Widget
+[2021.05.05-11.54.57:136][633]LogSlate: Window 'MainMenu_Widget' being destroyed
+[2021.05.05-11.54.57:254][633]LogSlate: Window 'MainMenu_Widget' being destroyed
+[2021.05.05-11.54.57:257][633]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.54.57:257][633]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.54.57:267][633]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.54.57:267][633]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.54.58:426][650]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Widgets/MapMenu_Widget.MapMenu_Widget
+[2021.05.05-11.55.56:160][504]BlueprintLog: New page: Compile MapMenu_Widget
+[2021.05.05-11.55.56:231][504]LogUObjectHash: Compacting FUObjectHashTables data took   4.53ms
+[2021.05.05-11.55.57:518][521]LogSavePackage: Moving '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/MapMenu_Widget0426F21C41B458984195F5A11EADD515.tmp' to '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Content/Widgets/MapMenu_Widget.uasset'
+[2021.05.05-11.55.57:537][521]AssetCheck: New page: Asset Save: MapMenu_Widget
+[2021.05.05-11.55.57:537][521]LogContentValidation: Display: Validating WidgetBlueprint /Game/Widgets/MapMenu_Widget.MapMenu_Widget
+[2021.05.05-11.55.58:822][542]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-11.55.58:947][542]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-11.55.58:953][542]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.55.58:954][542]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.55.58:970][542]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.55.58:970][542]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.56.02:088][591]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.05-11.56.02:107][591]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.05-11.56.02:107][591]PIE: New page: PIE session: MenuMap (5 мая 2021 г., 17:56:02)
+[2021.05.05-11.56.02:107][591]LogPlayLevel: Creating play world package: /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.56.02:130][591]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022610s)
+[2021.05.05-11.56.02:133][591]LogAIModule: Creating AISystem for world MenuMap
+[2021.05.05-11.56.02:133][591]LogPlayLevel: PIE: World Init took: (0.003014s)
+[2021.05.05-11.56.02:134][591]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu/MenuMap.MenuMap to /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap (0.025989s)
+[2021.05.05-11.56.02:168][591]LogUObjectHash: Compacting FUObjectHashTables data took   4.96ms
+[2021.05.05-11.56.02:170][591]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2021.05.05-11.56.02:170][591]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.05-11.56.02:170][591]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.05-11.56.02:170][591]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.05-11.56.02:170][591]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.05-11.56.02:170][591]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.05-11.56.02:170][591]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.05-11.56.02:170][591]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.05-11.56.02:170][591]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.05-11.56.02:171][591]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.05-11.56.02:171][591]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.05-11.56.02:174][591]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.05-11.56.02:174][591]LogAudioMixer: Display: 1: FrontRight
+[2021.05.05-11.56.02:184][591]LogAudioMixer: Display: Using Audio Device Динамики (Устройство с поддержкой High Definition Audio)
+[2021.05.05-11.56.02:184][591]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.05-11.56.02:184][591]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.05-11.56.02:184][591]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.05-11.56.02:184][591]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.05-11.56.02:184][591]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.05-11.56.02:184][591]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.05-11.56.02:198][591]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.05-11.56.02:198][591]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.05-11.56.02:198][591]LogInit: FAudioDevice initialized.
+[2021.05.05-11.56.02:198][591]LogAudio: Display: Audio Device (ID: 9) registered with world 'MenuMap'.
+[2021.05.05-11.56.02:206][591]LogLoad: Game class is 'NigelGameMode_BP_C'
+[2021.05.05-11.56.02:210][591]LogWorld: Bringing World /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap up for play (max tick rate 60) at 2021.05.05-14.56.02
+[2021.05.05-11.56.02:211][591]LogWorld: Bringing up level for play took: 0.003989
+[2021.05.05-11.56.02:211][591]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2021.05.05-11.56.02:213][591]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.56.02:213][591]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.56.02:213][591]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.56.02:215][591]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.56.02:215][591]PIE: Server logged in
+[2021.05.05-11.56.02:216][591]PIE: Play in editor total start time 0,11 seconds.
+[2021.05.05-11.56.12:499][796]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.56.12:499][796]LogWorld: BeginTearingDown for /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.56.12:500][796]LogWorld: UWorld::CleanupWorld for MenuMap, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.56.12:501][796]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.56.12:603][796]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.05-11.56.12:608][796]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.56.12:625][796]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.05-11.56.12:626][796]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.56.12:627][796]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.56.12:643][796]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.56.12:646][796]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2021.05.05-11.56.12:672][797]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2021.05.05-11.56.37:119][281]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.05-11.56.37:140][281]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.05-11.56.37:140][281]PIE: New page: PIE session: MenuMap (5 мая 2021 г., 17:56:37)
+[2021.05.05-11.56.37:140][281]LogPlayLevel: Creating play world package: /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.56.37:166][281]LogPlayLevel: PIE: StaticDuplicateObject took: (0.025794s)
+[2021.05.05-11.56.37:170][281]LogAIModule: Creating AISystem for world MenuMap
+[2021.05.05-11.56.37:170][281]LogPlayLevel: PIE: World Init took: (0.003666s)
+[2021.05.05-11.56.37:170][281]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu/MenuMap.MenuMap to /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap (0.029930s)
+[2021.05.05-11.56.37:203][281]LogUObjectHash: Compacting FUObjectHashTables data took   5.31ms
+[2021.05.05-11.56.37:206][281]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2021.05.05-11.56.37:206][281]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.05-11.56.37:206][281]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.05-11.56.37:207][281]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.05-11.56.37:207][281]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.05-11.56.37:207][281]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.05-11.56.37:207][281]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.05-11.56.37:207][281]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.05-11.56.37:207][281]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.05-11.56.37:208][281]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.05-11.56.37:208][281]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.05-11.56.37:210][281]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.05-11.56.37:210][281]LogAudioMixer: Display: 1: FrontRight
+[2021.05.05-11.56.37:220][281]LogAudioMixer: Display: Using Audio Device Динамики (Устройство с поддержкой High Definition Audio)
+[2021.05.05-11.56.37:221][281]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.05-11.56.37:221][281]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.05-11.56.37:221][281]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.05-11.56.37:221][281]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.05-11.56.37:221][281]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.05-11.56.37:221][281]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.05-11.56.37:235][281]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.05-11.56.37:235][281]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.05-11.56.37:235][281]LogInit: FAudioDevice initialized.
+[2021.05.05-11.56.37:235][281]LogAudio: Display: Audio Device (ID: 10) registered with world 'MenuMap'.
+[2021.05.05-11.56.37:247][281]LogLoad: Game class is 'NigelGameMode_BP_C'
+[2021.05.05-11.56.37:251][281]LogWorld: Bringing World /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap up for play (max tick rate 60) at 2021.05.05-14.56.37
+[2021.05.05-11.56.37:251][281]LogWorld: Bringing up level for play took: 0.003857
+[2021.05.05-11.56.37:252][281]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2021.05.05-11.56.37:253][281]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.56.37:253][281]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.56.37:253][281]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.56.37:256][281]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.56.37:256][281]PIE: Server logged in
+[2021.05.05-11.56.37:257][281]PIE: Play in editor total start time 0,119 seconds.
+[2021.05.05-11.56.48:541][518]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.56.48:541][518]LogWorld: BeginTearingDown for /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.56.48:541][518]LogWorld: UWorld::CleanupWorld for MenuMap, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.56.48:545][518]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.56.48:637][518]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.05-11.56.48:642][518]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.56.48:659][518]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.56.48:659][518]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.56.48:660][518]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.56.48:680][518]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2021.05.05-11.56.48:706][519]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2021.05.05-11.57.57:661][684]LogTemp: Repeating last play command: Selected Viewport
+[2021.05.05-11.57.57:680][684]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.05-11.57.57:680][684]PIE: New page: PIE session: MenuMap (5 мая 2021 г., 17:57:57)
+[2021.05.05-11.57.57:681][684]LogPlayLevel: Creating play world package: /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.57.57:703][684]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021812s)
+[2021.05.05-11.57.57:704][684]LogAIModule: Creating AISystem for world MenuMap
+[2021.05.05-11.57.57:704][684]LogPlayLevel: PIE: World Init took: (0.001687s)
+[2021.05.05-11.57.57:704][684]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/MainMenu/MenuMap.MenuMap to /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap (0.023767s)
+[2021.05.05-11.57.57:729][684]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2021.05.05-11.57.57:731][684]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2021.05.05-11.57.57:731][684]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.05-11.57.57:731][684]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.05-11.57.57:731][684]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.05-11.57.57:731][684]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.05-11.57.57:731][684]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.05-11.57.57:731][684]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.05-11.57.57:731][684]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.05-11.57.57:731][684]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.05-11.57.57:732][684]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.05-11.57.57:732][684]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.05-11.57.57:734][684]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.05-11.57.57:734][684]LogAudioMixer: Display: 1: FrontRight
+[2021.05.05-11.57.57:745][684]LogAudioMixer: Display: Using Audio Device Динамики (Устройство с поддержкой High Definition Audio)
+[2021.05.05-11.57.57:745][684]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.05-11.57.57:745][684]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.05-11.57.57:745][684]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.05-11.57.57:745][684]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.05-11.57.57:746][684]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.05-11.57.57:746][684]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.05-11.57.57:759][684]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.05-11.57.57:759][684]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.05-11.57.57:759][684]LogInit: FAudioDevice initialized.
+[2021.05.05-11.57.57:759][684]LogAudio: Display: Audio Device (ID: 11) registered with world 'MenuMap'.
+[2021.05.05-11.57.57:768][684]LogLoad: Game class is 'NigelGameMode_BP_C'
+[2021.05.05-11.57.57:773][684]LogWorld: Bringing World /Game/Maps/MainMenu/UEDPIE_0_MenuMap.MenuMap up for play (max tick rate 60) at 2021.05.05-14.57.57
+[2021.05.05-11.57.57:773][684]LogWorld: Bringing up level for play took: 0.004262
+[2021.05.05-11.57.57:774][684]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2021.05.05-11.57.57:776][684]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.57.57:776][684]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.05.05-11.57.57:776][684]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.57.57:778][684]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.05.05-11.57.57:778][684]PIE: Server logged in
+[2021.05.05-11.57.57:779][684]PIE: Play in editor total start time 0,1 seconds.
+[2021.05.05-11.58.03:629][809]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.58.03:629][809]LogWorld: BeginTearingDown for /Game/Maps/MainMenu/UEDPIE_0_MenuMap
+[2021.05.05-11.58.03:630][809]LogWorld: UWorld::CleanupWorld for MenuMap, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.58.03:631][809]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.58.03:732][809]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.05-11.58.03:740][809]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.58.03:768][809]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.05-11.58.03:768][809]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.58.03:769][809]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.05-11.58.03:791][809]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.05-11.58.03:797][809]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2021.05.05-11.58.03:822][810]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2021.05.05-11.59.02:562][241]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Widgets/MainMenu_Widget.MainMenu_Widget
+[2021.05.05-11.59.07:112][312]LogSlate: Window 'MainMenu_Widget' being destroyed
+[2021.05.05-11.59.07:213][312]LogSlate: Window 'MainMenu_Widget' being destroyed
+[2021.05.05-11.59.07:216][312]LogWorld: UWorld::CleanupWorld for World_15, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.59.07:216][312]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.59.07:222][312]LogWorld: UWorld::CleanupWorld for World_14, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.59.07:223][312]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.59.08:311][331]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Widgets/MapMenu_Widget.MapMenu_Widget
+[2021.05.05-11.59.37:965][717]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-11.59.38:074][717]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-11.59.38:080][717]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.59.38:080][717]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.59.38:088][717]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.59.38:088][717]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.59.40:574][763]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Widgets/MapMenu_Widget.MapMenu_Widget
+[2021.05.05-11.59.47:182][869]BlueprintLog: New page: Compile MapMenu_Widget
+[2021.05.05-11.59.47:327][869]LogUObjectHash: Compacting FUObjectHashTables data took   2.60ms
+[2021.05.05-11.59.51:547][943]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-11.59.51:651][943]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-11.59.51:654][943]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.59.51:654][943]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-11.59.51:660][943]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-11.59.51:661][943]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-12.00.37:824][813]LogUObjectHash: Compacting FUObjectHashTables data took   4.15ms
+[2021.05.05-12.00.37:827][813]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/MainMenu/MenuMap' took 0.049
+[2021.05.05-12.00.37:828][813]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Widgets/MapMenu_Widget] ([1] browsable assets)...
+[2021.05.05-12.00.37:828][813]OBJ SavePackage: Finished generating thumbnails for package [/Game/Widgets/MapMenu_Widget]
+[2021.05.05-12.00.37:836][813]LogSavePackage: Moving '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/MapMenu_Widget_Auto19FB43C2F42BB122258E37994D751F9B4.tmp' to '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/Autosaves/Game/Widgets/MapMenu_Widget_Auto1.uasset'
+[2021.05.05-12.00.37:838][813]LogFileHelpers: Auto-saving content packages took 0.011
+[2021.05.05-12.02.52:234][288]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2021.05.05-12.12.00:324][184]LogSlate: Window 'Project Settings' being destroyed
+[2021.05.05-12.12.00:426][184]LogSlate: Window 'Project Settings' being destroyed
+[2021.05.05-12.16.08:063][359]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Widgets/MapMenu_Widget.MapMenu_Widget
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: request failed, libcurl error: 56 (Failure when receiving data from the peer)
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x2440bd7feb0 [can pipeline])
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: libcurl info message cache 1 (Re-using existing connection! (#0) with host datarouter.ol.epicgames.com)
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (100.24.146.89) port 443 (#0))
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: libcurl info message cache 3 (We are completely uploaded and fine)
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: libcurl info message cache 4 (OpenSSL SSL_read: SSL_ERROR_SYSCALL, errno 10054)
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: libcurl info message cache 6 (necessary data rewind wasn't possible)
+[2021.05.05-12.18.45:623][247]LogHttp: Warning: 000002448002D600: libcurl info message cache 7 (Closing connection 0)
+[2021.05.05-12.18.45:680][248]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 0 (  Trying 54.205.227.176...)
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 1 (TCP_NODELAY set)
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (54.205.227.176) port 443 (#1))
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 3 (ALPN, offering http/1.1)
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 4 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 5 (SSL re-using session ID)
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 6 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 7 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: 000002448002DD00: libcurl info message cache 8 (Closing connection 1)
+[2021.05.05-12.19.45:667][294]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 1 (  Trying 34.225.91.157...)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (34.225.91.157) port 443 (#2))
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: 0000024480394F00: libcurl info message cache 9 (Closing connection 2)
+[2021.05.05-12.20.45:756][336]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.21.44:523][348]LogUObjectHash: Compacting FUObjectHashTables data took   5.05ms
+[2021.05.05-12.21.44:525][348]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/MainMenu/MenuMap' took 0.109
+[2021.05.05-12.21.44:525][348]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Widgets/MapMenu_Widget] ([1] browsable assets)...
+[2021.05.05-12.21.44:525][348]OBJ SavePackage: Finished generating thumbnails for package [/Game/Widgets/MapMenu_Widget]
+[2021.05.05-12.21.44:529][348]LogSavePackage: Moving '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/MapMenu_Widget_Auto26847221D4BCA8255FEA1A58BE4174463.tmp' to '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/Autosaves/Game/Widgets/MapMenu_Widget_Auto2.uasset'
+[2021.05.05-12.21.44:530][348]LogFileHelpers: Auto-saving content packages took 0.005
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 1 (  Trying 52.44.225.229...)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (52.44.225.229) port 443 (#3))
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: 0000024484DE0100: libcurl info message cache 9 (Closing connection 3)
+[2021.05.05-12.21.45:678][370]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 1 (  Trying 54.174.34.0...)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (54.174.34.0) port 443 (#4))
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: 00000244A1374100: libcurl info message cache 9 (Closing connection 4)
+[2021.05.05-12.22.45:670][418]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 1 (  Trying 3.232.160.238...)
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (3.232.160.238) port 443 (#5))
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.23.45:638][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.23.45:639][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.23.45:639][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.23.45:639][466]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 9 (Closing connection 5)
+[2021.05.05-12.23.45:639][466]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 1 (  Trying 54.224.4.128...)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (54.224.4.128) port 443 (#6))
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: 00000244A11F0100: libcurl info message cache 9 (Closing connection 6)
+[2021.05.05-12.24.45:590][514]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 1 (  Trying 54.224.4.128...)
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (54.224.4.128) port 443 (#7))
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.25.45:656][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.25.45:657][564]LogHttp: Warning: 00000244A1375600: libcurl info message cache 9 (Closing connection 7)
+[2021.05.05-12.25.45:657][564]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 1 (  Trying 52.206.114.53...)
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (52.206.114.53) port 443 (#8))
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.26.45:616][619]LogHttp: Warning: 00000244A1376400: libcurl info message cache 9 (Closing connection 8)
+[2021.05.05-12.26.45:674][620]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 1 (  Trying 52.44.225.229...)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (52.44.225.229) port 443 (#9))
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: 00000244A1374100: libcurl info message cache 9 (Closing connection 9)
+[2021.05.05-12.27.45:611][668]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 1 (  Trying 3.229.151.56...)
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (3.229.151.56) port 443 (#10))
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.28.45:631][723]LogHttp: Warning: 00000244A1377900: libcurl info message cache 9 (Closing connection 10)
+[2021.05.05-12.28.45:689][724]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.29.45:603][775]LogHttp: Warning: 00000244A1377900: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.29.45:603][775]LogHttp: Warning: 00000244A1377900: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.29.45:603][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 1 (  Trying 34.228.136.72...)
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (34.228.136.72) port 443 (#11))
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.29.45:604][775]LogHttp: Warning: 00000244A1377900: libcurl info message cache 9 (Closing connection 11)
+[2021.05.05-12.29.45:662][776]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 1 (  Trying 35.153.240.140...)
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (35.153.240.140) port 443 (#12))
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.30.45:629][825]LogHttp: Warning: 00000244A11F3200: libcurl info message cache 9 (Closing connection 12)
+[2021.05.05-12.30.45:688][826]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
+[2021.05.05-12.31.06:065][182]BlueprintLog: New page: Compile MapMenu_Widget
+[2021.05.05-12.31.06:139][182]LogUObjectHash: Compacting FUObjectHashTables data took   3.84ms
+[2021.05.05-12.31.12:924][302]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-12.31.13:026][302]LogSlate: Window 'MapMenu_Widget' being destroyed
+[2021.05.05-12.31.13:029][302]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-12.31.13:029][302]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-12.31.13:036][302]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2021.05.05-12.31.13:036][302]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: request failed, libcurl error: 35 (SSL connect error)
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 0 (Hostname in DNS cache was stale, zapped)
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 1 (  Trying 34.232.184.191...)
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 2 (TCP_NODELAY set)
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 3 (Connected to datarouter.ol.epicgames.com (34.232.184.191) port 443 (#13))
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 4 (ALPN, offering http/1.1)
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 5 (Cipher selection: ALL:!EXPORT:!EXPORT40:!EXPORT56:!aNULL:!LOW:!RC4:@STRENGTH)
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 6 (SSL re-using session ID)
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 7 (TLSv1.3 (OUT), TLS handshake, Client hello (1):)
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 8 (OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to datarouter.ol.epicgames.com:443 )
+[2021.05.05-12.31.46:115][770]LogHttp: Warning: 00000244A11F2B00: libcurl info message cache 9 (Closing connection 13)
+[2021.05.05-12.31.46:116][770]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B93F48436-467E-A47D-597E-71A768675526%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.26.2-15973114%2B%2B%2BUE4%2BRelease-4.26&UserID=28ab9182426ca5988252ed83e57f06ee%7Cbb5d85e484f84d3c95c054a4acad72e1%7Ce7403341-55df-4bdf-8a15-680aaa374ada&AppEnvironment=datacollector-binary&UploadType=eteventstream
