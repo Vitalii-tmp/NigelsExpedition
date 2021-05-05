@@ -8,7 +8,7 @@ public class NigelsExpedition : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "LevelSequence" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay", "LevelSequence", "UMG", "Slate", "SlateCore" });
 		PrivateDependencyModuleNames.AddRange(new string[] { "MovieScene" });
 	}
 }

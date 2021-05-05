@@ -64,6 +64,13 @@ public:
 	class ADoorActor* DoorExit;
 	class AMapActor* MapLevels;
 	class AArtifactActor* Artifacts;
+	class AOptionsActor* Options;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> HelpWidgetClass;
+
+	// declare widget
+	class UUserWidget* DoorWidget;
 private:
 	//dead check
 	bool bDead;

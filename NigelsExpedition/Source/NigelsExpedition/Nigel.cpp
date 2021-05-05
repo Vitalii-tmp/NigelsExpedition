@@ -8,6 +8,8 @@
 #include "MapActor.h"
 #include "DoorActor.h"
 #include "ArtifactActor.h"
+#include "OptionsActor.h"
+#include "Blueprint/UserWidget.h"
 
 // Sets default values
 ANigel::ANigel()
@@ -58,6 +60,7 @@ ANigel::ANigel()
 	DoorExit = NULL;
 	MapLevels = NULL;
 	Artifacts = NULL;
+	Options = NULL;
 }
 
 void ANigel::MoveForward(float Axis)
@@ -94,7 +97,20 @@ void ANigel::MoveRight(float Axis)
 void ANigel::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
+	if (HelpWidgetClass)
+	{
+		DoorWidget = CreateWidget<UUserWidget>(GetWorld(), HelpWidgetClass);
+		/*DoorWidget->GetWidgetFromName("Image_door")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Hidden);*/
+
+		if (DoorWidget)
+		{
+			DoorWidget->AddToViewport();
+		}
+
+	}
 }
 
 // Called every frame
@@ -145,19 +161,33 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(ADoorActor::StaticClass()))
 	{
 		DoorExit = Cast<ADoorActor>(OtherActor);
-		print("On door");
+		//print("On door");
+
+		DoorWidget->GetWidgetFromName("text_door")->SetVisibility(ESlateVisibility::Visible);
 	}
 
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AMapActor::StaticClass()))
 	{
 		MapLevels = Cast<AMapActor>(OtherActor);
-		print("On map");
+		//print("On map");
+
+		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Visible);
 	}
 
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AArtifactActor::StaticClass()))
 	{
 		Artifacts = Cast<AArtifactActor>(OtherActor);
-		print("On artifacts");
+		//print("On artifacts");
+
+		DoorWidget->GetWidgetFromName("text_artifacts")->SetVisibility(ESlateVisibility::Visible);
+	}
+
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AOptionsActor::StaticClass()))
+	{
+		Options = Cast<AOptionsActor>(OtherActor);
+		//print("On options");
+		
+		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Visible);
 	}
 }
 
@@ -169,5 +199,10 @@ void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 		DoorExit = NULL;
 		MapLevels = NULL;
 		Artifacts = NULL;
+		Options = NULL;
+		DoorWidget->GetWidgetFromName("text_door")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Hidden);
+		DoorWidget->GetWidgetFromName("text_artifacts")->SetVisibility(ESlateVisibility::Hidden);
 	}
 }
