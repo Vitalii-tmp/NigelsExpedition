@@ -111,6 +111,15 @@ void ANigel::BeginPlay()
 		}
 
 	}
+
+	if(MapMenuWidgetClass)
+	{
+		MapWidget = CreateWidget<UUserWidget>(GetWorld(), MapMenuWidgetClass);;
+		if(MapWidget)
+		{
+			MapWidget->AddToViewport();
+		}
+	}
 }
 
 // Called every frame
@@ -151,7 +160,7 @@ void ANigel::OnAction()
 
 	if(MapLevels)
 	{
-		MapLevels->LoadLevel();
+		MapWidget->GetWidgetFromName("Image_map")->SetVisibility(ESlateVisibility::Visible);
 	}
 }
 
@@ -200,6 +209,7 @@ void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 		MapLevels = NULL;
 		Artifacts = NULL;
 		Options = NULL;
+		
 		DoorWidget->GetWidgetFromName("text_door")->SetVisibility(ESlateVisibility::Hidden);
 		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Hidden);
 		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Hidden);

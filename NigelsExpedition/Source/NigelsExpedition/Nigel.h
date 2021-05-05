@@ -68,9 +68,13 @@ public:
 
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> HelpWidgetClass;
-
 	// declare widget
 	class UUserWidget* DoorWidget;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> MapMenuWidgetClass;
+	// declare widget
+	class UUserWidget* MapWidget;
 private:
 	//dead check
 	bool bDead;
