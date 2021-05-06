@@ -30,7 +30,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		USpringArmComponent* CameraBoom;
 
-
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UCameraComponent* FollowCamera;
 
@@ -44,6 +43,7 @@ public:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	// Called when player press key E
 	void OnAction();
 
 public:	
@@ -53,27 +53,30 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	// Function when you on any trigger
 	UFUNCTION()
 		void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 			int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
+	// Function when you exit from any trigger
 	UFUNCTION()
 		void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 			int32 OtherBodyIndex);
 
+	// Actors for main menu
 	class ADoorActor* DoorExit;
 	class AMapActor* MapLevels;
 	class AArtifactActor* Artifacts;
 	class AOptionsActor* Options;
 
+	// Widget for tips
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> HelpWidgetClass;
-	// declare widget
 	class UUserWidget* DoorWidget;
 
+	// Widget for map
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> MapMenuWidgetClass;
-	// declare widget
 	class UUserWidget* MapWidget;
 private:
 	//dead check

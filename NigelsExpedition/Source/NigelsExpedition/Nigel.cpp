@@ -10,6 +10,8 @@
 #include "ArtifactActor.h"
 #include "OptionsActor.h"
 #include "Blueprint/UserWidget.h"
+#include "GameFramework/PlayerController.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ANigel::ANigel()
@@ -49,14 +51,17 @@ ANigel::ANigel()
 
 	bDead = false;
 
+	//Trigger Capsule size, add to root
 	TriggerCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Trigger Capsule"));
 	TriggerCapsule->InitCapsuleSize(42.f, 96.f);
 	TriggerCapsule->SetCollisionProfileName(TEXT("Trigger"));
 	TriggerCapsule->SetupAttachment(RootComponent);
 
+	//Functions
 	TriggerCapsule->OnComponentBeginOverlap.AddDynamic(this, &ANigel::OnOverlapBegin);
 	TriggerCapsule->OnComponentEndOverlap.AddDynamic(this, &ANigel::OnOverlapEnd);
 
+	//Actors
 	DoorExit = NULL;
 	MapLevels = NULL;
 	Artifacts = NULL;
@@ -98,12 +103,11 @@ void ANigel::BeginPlay()
 {
 	Super::BeginPlay();
 
+
+	//Adding widgets to viewport
 	if (HelpWidgetClass)
 	{
 		DoorWidget = CreateWidget<UUserWidget>(GetWorld(), HelpWidgetClass);
-		/*DoorWidget->GetWidgetFromName("Image_door")->SetVisibility(ESlateVisibility::Hidden);
-		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Hidden);
-		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Hidden);*/
 
 		if (DoorWidget)
 		{
@@ -126,7 +130,6 @@ void ANigel::BeginPlay()
 void ANigel::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 // Called to bind functionality to input
@@ -138,6 +141,7 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 
+	//E key(using in main menu)
 	PlayerInputComponent->BindAction("ActionE", IE_Released, this, &ANigel::OnAction);
 
 	//Jumping
@@ -151,26 +155,38 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("MoveRight", this, &ANigel::MoveRight);
 }
 
+// Called when pressed E key
 void ANigel::OnAction()
 {
+	//Checked if actor is existing 
 	if (DoorExit)
 	{
+		//Function for exit
 		DoorExit->ExitGame();
 	}
 
 	if(MapLevels)
 	{
+		//Set map widget visible
 		MapWidget->GetWidgetFromName("Image_map")->SetVisibility(ESlateVisibility::Visible);
+		APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+
+		MyController->bShowMouseCursor = true;
+		MyController->bEnableClickEvents = true;
+		MyController->bEnableMouseOverEvents = true;
+
+		UGameplayStatics::SetGamePaused(GetWorld(), true);
 	}
 }
 
+//Called when trigger capsule is on actor
 void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	//Check actor and depend on this set visible some text and set actor not null
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(ADoorActor::StaticClass()))
 	{
 		DoorExit = Cast<ADoorActor>(OtherActor);
-		//print("On door");
 
 		DoorWidget->GetWidgetFromName("text_door")->SetVisibility(ESlateVisibility::Visible);
 	}
@@ -178,7 +194,6 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AMapActor::StaticClass()))
 	{
 		MapLevels = Cast<AMapActor>(OtherActor);
-		//print("On map");
 
 		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Visible);
 	}
@@ -186,7 +201,6 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AArtifactActor::StaticClass()))
 	{
 		Artifacts = Cast<AArtifactActor>(OtherActor);
-		//print("On artifacts");
 
 		DoorWidget->GetWidgetFromName("text_artifacts")->SetVisibility(ESlateVisibility::Visible);
 	}
@@ -194,22 +208,24 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AOptionsActor::StaticClass()))
 	{
 		Options = Cast<AOptionsActor>(OtherActor);
-		//print("On options");
 		
 		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Visible);
 	}
 }
 
+//Called when trigger capsule go from actor
 void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	int32 OtherBodyIndex)
 {
 	if (OtherActor && OtherActor != this && OtherComp)
 	{
+		//set actors null
 		DoorExit = NULL;
 		MapLevels = NULL;
 		Artifacts = NULL;
 		Options = NULL;
-		
+
+		//set all widget hidden
 		DoorWidget->GetWidgetFromName("text_door")->SetVisibility(ESlateVisibility::Hidden);
 		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Hidden);
 		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Hidden);

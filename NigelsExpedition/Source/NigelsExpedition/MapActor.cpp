@@ -10,9 +10,11 @@ AMapActor::AMapActor()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	//Set root component mesh
 	MapMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Map"));
 	RootComponent = MapMeshComponent;
 
+	//Adding box component
 	BoxComponent = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
 	BoxComponent->InitBoxExtent(FVector(3, 20, 10));
 	BoxComponent->SetCollisionProfileName(TEXT("Trigger"));
@@ -33,6 +35,7 @@ void AMapActor::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
+//Called to load level
 void AMapActor::LoadLevel()
 {
 	UGameplayStatics::OpenLevel(GetWorld(), "Game/Maps/Locations/FirstLocations");
