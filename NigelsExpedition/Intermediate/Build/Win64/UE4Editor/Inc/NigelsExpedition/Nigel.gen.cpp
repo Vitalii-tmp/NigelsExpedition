@@ -127,7 +127,9 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANigel_OnOverlapBegin_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// Function when you on any trigger\n" },
 		{ "ModuleRelativePath", "Nigel.h" },
+		{ "ToolTip", "Function when you on any trigger" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANigel_OnOverlapBegin_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANigel, nullptr, "OnOverlapBegin", nullptr, nullptr, sizeof(Nigel_eventOnOverlapBegin_Parms), Z_Construct_UFunction_ANigel_OnOverlapBegin_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ANigel_OnOverlapBegin_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANigel_OnOverlapBegin_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANigel_OnOverlapBegin_Statics::Function_MetaDataParams)) };
@@ -187,7 +189,9 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANigel_OnOverlapEnd_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "// Function when you exit from any trigger\n" },
 		{ "ModuleRelativePath", "Nigel.h" },
+		{ "ToolTip", "Function when you exit from any trigger" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANigel_OnOverlapEnd_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANigel, nullptr, "OnOverlapEnd", nullptr, nullptr, sizeof(Nigel_eventOnOverlapEnd_Parms), Z_Construct_UFunction_ANigel_OnOverlapEnd_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ANigel_OnOverlapEnd_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANigel_OnOverlapEnd_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANigel_OnOverlapEnd_Statics::Function_MetaDataParams)) };
@@ -240,8 +244,8 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_NigelsExpedition,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ANigel_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ANigel_OnOverlapBegin, "OnOverlapBegin" }, // 3039341352
-		{ &Z_Construct_UFunction_ANigel_OnOverlapEnd, "OnOverlapEnd" }, // 3850572592
+		{ &Z_Construct_UFunction_ANigel_OnOverlapBegin, "OnOverlapBegin" }, // 2092936442
+		{ &Z_Construct_UFunction_ANigel_OnOverlapEnd, "OnOverlapEnd" }, // 2026913743
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANigel_Statics::Class_MetaDataParams[] = {
@@ -277,14 +281,18 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANigel_Statics::NewProp_HelpWidgetClass_MetaData[] = {
 		{ "Category", "Nigel" },
+		{ "Comment", "// Widget for tips\n" },
 		{ "ModuleRelativePath", "Nigel.h" },
+		{ "ToolTip", "Widget for tips" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANigel_Statics::NewProp_HelpWidgetClass = { "HelpWidgetClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANigel, HelpWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ANigel_Statics::NewProp_HelpWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANigel_Statics::NewProp_HelpWidgetClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass_MetaData[] = {
 		{ "Category", "Nigel" },
+		{ "Comment", "// Widget for map\n" },
 		{ "ModuleRelativePath", "Nigel.h" },
+		{ "ToolTip", "Widget for map" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass = { "MapMenuWidgetClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANigel, MapMenuWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass_MetaData)) };
@@ -322,7 +330,7 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANigel, 3075320533);
+	IMPLEMENT_CLASS(ANigel, 308773464);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<ANigel>()
 	{
 		return ANigel::StaticClass();
