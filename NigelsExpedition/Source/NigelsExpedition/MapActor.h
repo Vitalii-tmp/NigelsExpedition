@@ -23,12 +23,14 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	// Components in actor
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 		UStaticMeshComponent* MapMeshComponent;
 
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 		class UBoxComponent* BoxComponent;
 
+	// Function to load level
 	UFUNCTION(BlueprintCallable, Category = "Components")
 		void LoadLevel();
 };

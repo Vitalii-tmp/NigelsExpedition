@@ -24,6 +24,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	// Actor components
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 		UStaticMeshComponent* MeshComponent;
 
@@ -33,6 +34,7 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 		class USphereComponent* LightSphere;
 
+	// Function for exit from game
 	UFUNCTION(BlueprintCallable, Category = "Components")
 		void ExitGame();
 };
