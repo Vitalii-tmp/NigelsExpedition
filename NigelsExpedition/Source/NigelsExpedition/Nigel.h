@@ -45,6 +45,7 @@ public:
 
 	// Called when player press key E
 	void OnAction();
+	void OnActionEsc();
 
 public:	
 	// Called every frame

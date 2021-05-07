@@ -66,6 +66,8 @@ ANigel::ANigel()
 	MapLevels = NULL;
 	Artifacts = NULL;
 	Options = NULL;
+
+	PrimaryActorTick.bTickEvenWhenPaused = true;
 }
 
 void ANigel::MoveForward(float Axis)
@@ -144,6 +146,8 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	//E key(using in main menu)
 	PlayerInputComponent->BindAction("ActionE", IE_Released, this, &ANigel::OnAction);
 
+	PlayerInputComponent->BindAction("ActionEsc", IE_Released, this, &ANigel::OnActionEsc).bExecuteWhenPaused = true;
+
 	//Jumping
 	//PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	//PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
@@ -178,6 +182,20 @@ void ANigel::OnAction()
 		UGameplayStatics::SetGamePaused(GetWorld(), true);
 	}
 }
+
+void ANigel::OnActionEsc() {
+  if(MapWidget->GetWidgetFromName("Image_map")->Visibility == ESlateVisibility::Visible) {
+	  MapWidget->GetWidgetFromName("Image_map")->SetVisibility(ESlateVisibility::Hidden);
+	  APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+
+	  MyController->bShowMouseCursor = false;
+	  MyController->bEnableClickEvents = false;
+	  MyController->bEnableMouseOverEvents = false;
+
+	  UGameplayStatics::SetGamePaused(GetWorld(), false);
+  }
+}
+
 
 //Called when trigger capsule is on actor
 void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
