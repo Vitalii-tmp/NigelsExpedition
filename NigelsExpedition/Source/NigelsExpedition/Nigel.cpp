@@ -193,6 +193,8 @@ void ANigel::OnActionEsc() {
 	  MyController->bEnableMouseOverEvents = false;
 
 	  UGameplayStatics::SetGamePaused(GetWorld(), false);
+
+	  MapLevels->LoadLevel();
   }
 }
 
