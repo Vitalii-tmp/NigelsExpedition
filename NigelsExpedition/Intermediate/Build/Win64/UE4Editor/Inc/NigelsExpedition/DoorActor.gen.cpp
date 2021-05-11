@@ -45,7 +45,9 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ADoorActor_ExitGame_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Components" },
+		{ "Comment", "// Function for exit from game\n" },
 		{ "ModuleRelativePath", "DoorActor.h" },
+		{ "ToolTip", "Function for exit from game" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ADoorActor_ExitGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ADoorActor, nullptr, "ExitGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ADoorActor_ExitGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ADoorActor_ExitGame_Statics::Function_MetaDataParams)) };
@@ -90,7 +92,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_NigelsExpedition,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ADoorActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ADoorActor_ExitGame, "ExitGame" }, // 794351061
+		{ &Z_Construct_UFunction_ADoorActor_ExitGame, "ExitGame" }, // 1674871639
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::Class_MetaDataParams[] = {
@@ -101,8 +103,10 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComponent_MetaData[] = {
 		{ "Category", "Components" },
+		{ "Comment", "// Actor components\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "DoorActor.h" },
+		{ "ToolTip", "Actor components" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADoorActor, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADoorActor_Statics::NewProp_MeshComponent_MetaData)) };
@@ -154,7 +158,7 @@ void EmptyLinkFunctionForGeneratedCodeDoorActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ADoorActor, 3038635002);
+	IMPLEMENT_CLASS(ADoorActor, 3799529154);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<ADoorActor>()
 	{
 		return ADoorActor::StaticClass();

@@ -45,7 +45,9 @@ void EmptyLinkFunctionForGeneratedCodeMapActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMapActor_LoadLevel_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Components" },
+		{ "Comment", "// Function to load level\n" },
 		{ "ModuleRelativePath", "MapActor.h" },
+		{ "ToolTip", "Function to load level" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMapActor_LoadLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMapActor, nullptr, "LoadLevel", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMapActor_LoadLevel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMapActor_LoadLevel_Statics::Function_MetaDataParams)) };
@@ -86,7 +88,7 @@ void EmptyLinkFunctionForGeneratedCodeMapActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_NigelsExpedition,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMapActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMapActor_LoadLevel, "LoadLevel" }, // 1137000700
+		{ &Z_Construct_UFunction_AMapActor_LoadLevel, "LoadLevel" }, // 3494873424
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMapActor_Statics::Class_MetaDataParams[] = {
@@ -97,8 +99,10 @@ void EmptyLinkFunctionForGeneratedCodeMapActor() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMapActor_Statics::NewProp_MapMeshComponent_MetaData[] = {
 		{ "Category", "Components" },
+		{ "Comment", "// Components in actor\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "MapActor.h" },
+		{ "ToolTip", "Components in actor" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMapActor_Statics::NewProp_MapMeshComponent = { "MapMeshComponent", nullptr, (EPropertyFlags)0x00100000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMapActor, MapMeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMapActor_Statics::NewProp_MapMeshComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMapActor_Statics::NewProp_MapMeshComponent_MetaData)) };
@@ -141,7 +145,7 @@ void EmptyLinkFunctionForGeneratedCodeMapActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMapActor, 790223250);
+	IMPLEMENT_CLASS(AMapActor, 2438855168);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<AMapActor>()
 	{
 		return AMapActor::StaticClass();

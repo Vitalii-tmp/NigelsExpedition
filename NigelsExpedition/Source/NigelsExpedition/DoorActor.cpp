@@ -28,16 +28,15 @@ ADoorActor::ADoorActor()
 void ADoorActor::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
 void ADoorActor::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
+// Called when player press e to exit from game
 void ADoorActor::ExitGame()
 {
 	FGenericPlatformMisc::RequestExit(true);
