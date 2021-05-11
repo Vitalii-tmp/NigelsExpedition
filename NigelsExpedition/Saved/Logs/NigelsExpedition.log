@@ -1098,3 +1098,118 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.05.11-09.07.06:011][905]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
 [2021.05.11-09.07.06:048][906]LogPlayLevel: Display: Destroying online subsystem :Context_5
 [2021.05.11-09.10.00:969][646]LogEditorViewport: Clicking on Actor (LMB): Wall_Actor_C (Wall_Actor10)
+[2021.05.11-09.12.14:096][ 92]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
+[2021.05.11-09.12.14:354][ 92]LogSlate: Window 'NigelsExpedition - Unreal Editor' being destroyed
+[2021.05.11-09.12.14:355][ 92]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2021.05.11-09.12.16:289][ 93]Cmd: QUIT_EDITOR
+[2021.05.11-09.12.16:289][ 93]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.05.11-09.12.16:454][ 93]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.05.11-09.12.17:214][ 93]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2021.05.11-09.12.17:214][ 93]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2021.05.11-09.12.17:214][ 93]LogAudio: Display: Audio Device unregistered from world 'MenuMap'.
+[2021.05.11-09.12.17:227][ 93]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.11-09.12.17:229][ 93]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.11-09.12.17:807][ 93]LogAudio: Display: Audio Device Manager Shutdown
+[2021.05.11-09.12.17:879][ 93]LogExit: Preparing to exit.
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D58A100] Windows
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D58A200] Default__DeviceProfile
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D495900] WindowsNoEditor
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D58AC00] WindowsServer
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D496200] WindowsClient
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589000] IOS
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D494E00] iPadAir
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589F00] iPadAir2
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342000] IPadPro
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342100] iPadAir3
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D494100] iPadAir4
+[2021.05.11-09.12.19:416][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342400] iPadMini2
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D494800] iPadMini3
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341200] iPadMini4
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D495200] iPadMini5
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D351800] iPhone6
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D351900] iPodTouch6
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341000] iPhone7
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D343B00] iPodTouch7
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D353000] iPhone5S
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342900] iPhone6Plus
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D351400] iPhone6S
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D343300] iPhone6SPlus
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D350200] iPhone7Plus
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342800] iPhoneSE
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D351F00] iPhone8
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341D00] iPhone8Plus
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D353C00] iPhoneX
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341C00] iPhoneXS
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D350300] iPhoneXSMax
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341E00] iPhoneXR
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D352F00] iPhone11
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D343100] iPhone11Pro
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D352400] iPhone11ProMax
+[2021.05.11-09.12.19:417][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341800] iPhoneSE2
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D351300] iPhone12Mini
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D340400] iPhone12
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D351C00] iPhone12Pro
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D343500] iPhone12ProMax
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D353200] iPadPro105
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341F00] iPadPro129
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589400] iPadPro97
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341300] iPadPro2_129
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D588500] iPad5
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D340D00] iPad6
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D588300] iPad7
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341400] iPad8
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D58B000] iPadPro11
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342300] iPadPro2_11
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589B00] iPadPro3_129
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D343D00] iPadPro4_129
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D58A400] AppleTV
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342E00] AppleTV4K
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D588400] TVOS
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342F00] Mac
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589900] MacClient
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341600] MacNoEditor
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D588200] MacServer
+[2021.05.11-09.12.19:418][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D343600] Linux
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589200] LinuxAArch64
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341B00] LinuxNoEditor
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589700] LinuxAArch64NoEditor
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D340300] LinuxClient
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D58A800] LinuxAArch64Client
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D340500] LinuxServer
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D58A900] LinuxAArch64Server
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D343200] Android
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D588F00] Android_Low
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342B00] Android_Mid
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D588A00] Android_High
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D342500] Android_Default
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589800] Android_Adreno4xx
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341700] Android_Adreno5xx_Low
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589D00] Android_Adreno5xx
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D343700] Android_Adreno6xx
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D589600] Android_Adreno6xx_Vulkan
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D341900] Android_Mali_T6xx
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D588D00] Android_Mali_T7xx
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D496500] Android_Mali_T8xx
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D353B00] Android_Mali_G71
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D495F00] Android_Mali_G72
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D351200] Android_Mali_G72_Vulkan
+[2021.05.11-09.12.19:419][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D494700] Android_Mali_G76
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D352A00] Android_Mali_G76_Vulkan
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D497900] Android_Mali_G77
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D353300] Android_Mali_G77_Vulkan
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D495800] Android_Vulkan_SM5
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D352300] Android_PowerVR_G6xxx
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D497600] Android_PowerVR_GT7xxx
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D352800] Android_PowerVR_GE8xxx
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D497000] Android_PowerVR_GM9xxx
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D350500] Android_PowerVR_GM9xxx_Vulkan
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D497C00] Android_TegraK1
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D353A00] Android_Unknown_Vulkan
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D495A00] Lumin
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D351100] Lumin_Desktop
+[2021.05.11-09.12.19:420][ 93]LogDeviceProfile: Device profile begin destroy: [000002894D496400] HoloLens
+[2021.05.11-09.12.23:276][ 93]LogWorld: UWorld::CleanupWorld for World_0, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-09.12.24:651][ 93]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.05.11-09.12.26:949][ 93]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.05.11-09.12.26:950][ 93]LogExit: Editor shut down
+[2021.05.11-09.12.27:119][ 93]LogExit: Transaction tracking system shut down
