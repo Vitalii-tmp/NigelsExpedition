@@ -1097,3 +1097,4 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.05.11-09.07.05:960][905]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
 [2021.05.11-09.07.06:011][905]LogUObjectHash: Compacting FUObjectHashTables data took   1.44ms
 [2021.05.11-09.07.06:048][906]LogPlayLevel: Display: Destroying online subsystem :Context_5
+[2021.05.11-09.10.00:969][646]LogEditorViewport: Clicking on Actor (LMB): Wall_Actor_C (Wall_Actor10)
