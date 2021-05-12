@@ -1,9 +1,9 @@
-E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\Definitions.NigelsExpedition.h
-E:\Angelina\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-E:\Angelina\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition/NigelsExpeditionGameMode.h
-E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\NigelsExpeditionGameMode.generated.h
+D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\Definitions.NigelsExpedition.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition/NigelsExpeditionGameMode.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\ProgramFiles\EpicGames\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\NigelsExpeditionGameMode.generated.h
