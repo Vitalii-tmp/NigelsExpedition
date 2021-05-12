@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NigelsExpedition.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{89ACC9C2-BDE3-4F90-BC55-6F2CB913D21D}</UniqueIdentifier>
+      <UniqueIdentifier>{8FDFDA44-5F0C-4399-9276-F5E125218EDD}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NigelsExpedition.Target.cs">
       <Filter>Source</Filter>
@@ -11,9 +11,8 @@
     <None Include="..\..\Source\NigelsExpeditionEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
-    <None Include="..\..\NigelsExpedition.sln.DotSettings.user" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6268E1D3-F936-4285-A9AB-7E13DB576345}</UniqueIdentifier>
+      <UniqueIdentifier>{2FE2593C-D02F-480F-89FA-908227A36B50}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -31,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NigelsExpedition">
-      <UniqueIdentifier>{966356CA-DE52-409C-960F-24C0D76F7C32}</UniqueIdentifier>
+      <UniqueIdentifier>{895134C6-A90A-4138-BCA9-02FF64745F78}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NigelsExpedition\ArtifactActor.cpp">
       <Filter>Source\NigelsExpedition</Filter>
@@ -55,6 +54,12 @@
       <Filter>Source\NigelsExpedition</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\NigelsExpedition\DoorActor.h">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\NigelsExpedition\GameSave.cpp">
+      <Filter>Source\NigelsExpedition</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\NigelsExpedition\GameSave.h">
       <Filter>Source\NigelsExpedition</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\NigelsExpedition\MapActor.cpp">
