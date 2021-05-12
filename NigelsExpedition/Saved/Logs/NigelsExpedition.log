@@ -1049,3 +1049,249 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.05.12-16.51.24:726][463]LogPlayLevel: Display: Destroying online subsystem :Context_7
 [2021.05.12-20.16.12:220][585]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
 [2021.05.12-20.16.12:220][585]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2021.05.12-20.29.01:767][428]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0001.dll
+[2021.05.12-20.29.01:767][428]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0002.dll
+[2021.05.12-20.29.01:791][429]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.12-20.29.02:413][429]LogClass: Could not find existing class Nigel in package /Script/NigelsExpedition for HotReload, assuming new class
+[2021.05.12-20.29.02:757][429]LogHotReload: Re-instancing Nigel after hot-reload.
+[2021.05.12-20.29.03:105][429]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NigelsExpedition' in 0.0003 seconds. Added 10 classes and 2 folders.
+[2021.05.12-20.29.03:110][429]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.05.12-20.29.19:018][429]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 4.5552 seconds. Added 3611 classes and 861 folders.
+[2021.05.12-20.29.20:758][429]Display: HotReload took 19.0s.
+[2021.05.12-20.29.38:667][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0004.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0005.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0006.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0008.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0027.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0029.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0031.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0033.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0034.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0035.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0036.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0037.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0038.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0039.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0040.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0041.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0051.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0052.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0053.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0054.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0055.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0056.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0057.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0059.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0060.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0061.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0062.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0122.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0607.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-1628.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-3535.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-3747.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-4085.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-4766.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-5103.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-6538.dll
+[2021.05.12-20.29.38:668][429]LogHotReload: New module detected: UE4Editor-NigelsExpedition-9731.dll
+[2021.05.12-20.29.38:792][430]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.12-20.29.38:851][430]LogClass: Could not find existing class Nigel in package /Script/NigelsExpedition for HotReload, assuming new class
+[2021.05.12-20.29.38:851][430]LogClass: Function OnOverlapBegin is new.
+[2021.05.12-20.29.38:851][430]LogClass: Function OnOverlapEnd is new.
+[2021.05.12-20.29.38:883][430]LogHotReload: Re-instancing Nigel after hot-reload.
+[2021.05.12-20.29.38:997][430]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NigelsExpedition' in 0.0008 seconds. Added 10 classes and 2 folders.
+[2021.05.12-20.29.39:006][430]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2021.05.12-20.29.39:157][430]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0262 seconds. Added 3611 classes and 861 folders.
+[2021.05.12-20.29.39:183][430]Display: HotReload took  0.4s.
+[2021.05.12-20.29.42:331][433]LogAudioMixer: Display: Audio Buffer Underrun (starvation) detected.
+[2021.05.12-20.31.21:126][727]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0001.dll
+[2021.05.12-20.31.21:150][728]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.12-20.31.21:429][728]LogHotReload: Re-instancing Nigel after hot-reload.
+[2021.05.12-20.31.21:598][728]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NigelsExpedition' in 0.0005 seconds. Added 10 classes and 2 folders.
+[2021.05.12-20.31.21:605][728]Display: HotReload successful (6 functions remapped  0 scriptstructs remapped)
+[2021.05.12-20.31.21:769][728]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0122 seconds. Added 3611 classes and 861 folders.
+[2021.05.12-20.31.21:780][728]Display: HotReload took  0.6s.
+[2021.05.12-20.31.22:662][728]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0003.dll
+[2021.05.12-20.31.22:662][728]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0004.dll
+[2021.05.12-20.31.22:811][729]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.12-20.31.22:847][729]LogClass: Could not find existing class Nigel in package /Script/NigelsExpedition for HotReload, assuming new class
+[2021.05.12-20.31.22:847][729]LogClass: Function OnOverlapBegin is new.
+[2021.05.12-20.31.22:847][729]LogClass: Function OnOverlapEnd is new.
+[2021.05.12-20.31.22:881][729]LogHotReload: Re-instancing Nigel after hot-reload.
+[2021.05.12-20.31.22:950][729]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NigelsExpedition' in 0.0003 seconds. Added 10 classes and 2 folders.
+[2021.05.12-20.31.22:958][729]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2021.05.12-20.31.23:099][729]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0121 seconds. Added 3611 classes and 861 folders.
+[2021.05.12-20.31.23:131][729]Display: HotReload took  0.3s.
+[2021.05.12-20.31.23:845][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0005.dll
+[2021.05.12-20.31.23:860][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0006.dll
+[2021.05.12-20.31.23:860][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0007.dll
+[2021.05.12-20.31.23:860][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0008.dll
+[2021.05.12-20.31.23:860][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0009.dll
+[2021.05.12-20.31.23:860][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0049.dll
+[2021.05.12-20.31.23:860][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0050.dll
+[2021.05.12-20.31.23:860][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0051.dll
+[2021.05.12-20.31.23:860][729]LogHotReload: New module detected: UE4Editor-NigelsExpedition-0052.dll
+[2021.05.12-20.31.23:919][730]LogHotReload: Starting Hot-Reload from IDE
+[2021.05.12-20.31.24:001][730]LogClass: Could not find existing class Nigel in package /Script/NigelsExpedition for HotReload, assuming new class
+[2021.05.12-20.31.24:001][730]LogClass: Function OnOverlapBegin is new.
+[2021.05.12-20.31.24:001][730]LogClass: Function OnOverlapEnd is new.
+[2021.05.12-20.31.24:043][730]LogHotReload: Re-instancing Nigel after hot-reload.
+[2021.05.12-20.31.24:128][730]LogNativeClassHierarchy: Verbose: Native class hierarchy updated for 'NigelsExpedition' in 0.0003 seconds. Added 10 classes and 2 folders.
+[2021.05.12-20.31.24:137][730]Display: HotReload successful (4 functions remapped  0 scriptstructs remapped)
+[2021.05.12-20.31.24:296][730]LogNativeClassHierarchy: Verbose: Native class hierarchy populated in 0.0122 seconds. Added 3611 classes and 861 folders.
+[2021.05.12-20.31.24:307][730]Display: HotReload took  0.4s.
+[2021.05.12-20.32.40:453][907]LogUObjectHash: Compacting FUObjectHashTables data took  17.98ms
+[2021.05.12-20.32.47:636][907]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2021.05.12-20.32.47:636][907]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2021.05.12-20.32.49:193][907]LogSlate: Window 'Save Content' being destroyed
+[2021.05.12-20.32.51:113][907]LogUObjectHash: Compacting FUObjectHashTables data took   5.04ms
+[2021.05.12-20.32.51:191][907]LogSavePackage: Moving '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/MenuMap204A9D1C4EC5A1A819EBFCB53139736E.tmp' to '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Content/Maps/MainMenu/MenuMap.umap'
+[2021.05.12-20.32.51:254][907]LogFileHelpers: Saving map 'MenuMap' took 1.950
+[2021.05.12-20.32.51:263][907]LogSavePackage: Moving '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/oneHandedSword480D2D53428478E959E8728CEC921B2C.tmp' to '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Content/Models/Environment/Meshes/Room/oneHandedSword.uasset'
+[2021.05.12-20.32.51:623][907]LogSavePackage: Moving '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/sword6B3BBA594B5AE7071496CDACF42A988E.tmp' to '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Content/Models/Environment/Meshes/Room/sword.uasset'
+[2021.05.12-20.32.51:752][907]LogSavePackage: Moving '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Saved/sword1C6BCDE1F4B8900F926CA759100960DA2.tmp' to '../../../../../programming (zanachki)/UnrealEngine/NigelsExpedition/,/NigelsExpedition/NigelsExpedition/Content/Models/Environment/Textures/Room/sword1.uasset'
+[2021.05.12-20.32.51:931][907]LogSlate: Window 'NigelsExpedition - Unreal Editor' being destroyed
+[2021.05.12-20.32.51:962][907]LogWindowsTextInputMethodSystem: Display: IME system deactivated.
+[2021.05.12-20.32.56:372][907]AssetCheck: New page: Asset Save: multiple assets
+[2021.05.12-20.32.56:372][907]LogContentValidation: Display: Validating World /Game/Maps/MainMenu/MenuMap.MenuMap
+[2021.05.12-20.32.56:373][907]LogContentValidation: Display: Validating Material /Game/Models/Environment/Meshes/Room/sword.sword
+[2021.05.12-20.32.56:373][907]LogContentValidation: Display: Validating StaticMesh /Game/Models/Environment/Meshes/Room/oneHandedSword.oneHandedSword
+[2021.05.12-20.32.56:373][907]LogContentValidation: Display: Validating Texture2D /Game/Models/Environment/Textures/Room/sword1.sword1
+[2021.05.12-20.32.56:850][908]Cmd: QUIT_EDITOR
+[2021.05.12-20.32.56:850][908]LogCore: Engine exit requested (reason: UUnrealEdEngine::CloseEditor())
+[2021.05.12-20.32.57:176][908]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2021.05.12-20.32.58:370][908]LogAudio: Display: Beginning Audio Device Manager Shutdown (Module: AudioMixerXAudio2)...
+[2021.05.12-20.32.58:370][908]LogAudio: Display: Destroying 1 Remaining Audio Device(s)...
+[2021.05.12-20.32.58:370][908]LogAudio: Display: Audio Device unregistered from world 'MenuMap'.
+[2021.05.12-20.32.58:436][908]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.12-20.32.58:500][908]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.12-20.32.59:117][908]LogAudio: Display: Audio Device Manager Shutdown
+[2021.05.12-20.32.59:530][908]LogExit: Preparing to exit.
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [00000240428D6000] Windows
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [00000240428D6100] Default__DeviceProfile
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042855800] WindowsNoEditor
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5600] WindowsServer
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042856100] WindowsClient
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [00000240428D4E00] IOS
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042856600] iPadAir
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [00000240428D4B00] iPadAir2
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042806100] IPadPro
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042806200] iPadAir3
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042854200] iPadAir4
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042807B00] iPadMini2
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042857200] iPadMini3
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042804D00] iPadMini4
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042857E00] iPadMini5
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042815B00] iPhone6
+[2021.05.12-20.33.01:150][908]LogDeviceProfile: Device profile begin destroy: [0000024042815C00] iPodTouch6
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042805E00] iPhone7
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042805D00] iPodTouch7
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042817300] iPhone5S
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042806B00] iPhone6Plus
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042815100] iPhone6S
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042804600] iPhone6SPlus
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042816F00] iPhone7Plus
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042806500] iPhoneSE
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042817700] iPhone8
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042804700] iPhone8Plus
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042817800] iPhoneX
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042806E00] iPhoneXS
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042814700] iPhoneXSMax
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042804F00] iPhoneXR
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042815D00] iPhone11
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042805B00] iPhone11Pro
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042816B00] iPhone11ProMax
+[2021.05.12-20.33.01:151][908]LogDeviceProfile: Device profile begin destroy: [0000024042805200] iPhoneSE2
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042817E00] iPhone12Mini
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042805700] iPhone12
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042815400] iPhone12Pro
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042807C00] iPhone12ProMax
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042814600] iPadPro105
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042804A00] iPadPro129
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042814500] iPadPro97
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042806700] iPadPro2_129
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042815900] iPad5
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5B00] iPad6
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042815500] iPad7
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [00000240428D4D00] iPad8
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042817D00] iPadPro11
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [00000240428D4800] iPadPro2_11
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042814E00] iPadPro3_129
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5300] iPadPro4_129
+[2021.05.12-20.33.01:152][908]LogDeviceProfile: Device profile begin destroy: [0000024042816500] AppleTV
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D4200] AppleTV4K
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [0000024042814400] TVOS
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5200] Mac
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [0000024042814F00] MacClient
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D6200] MacNoEditor
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [0000024042816400] MacServer
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5D00] Linux
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [0000024042816800] LinuxAArch64
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D6600] LinuxNoEditor
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [0000024042816600] LinuxAArch64NoEditor
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5800] LinuxClient
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [0000024042815000] LinuxAArch64Client
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D6B00] LinuxServer
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [0000024042817400] LinuxAArch64Server
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D6E00] Android
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [0000024042817C00] Android_Low
+[2021.05.12-20.33.01:164][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5900] Android_Mid
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042815A00] Android_High
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [00000240428D4100] Android_Default
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042816200] Android_Adreno4xx
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [00000240428D4500] Android_Adreno5xx_Low
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042817200] Android_Adreno5xx
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5C00] Android_Adreno6xx
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042816700] Android_Adreno6xx_Vulkan
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [00000240428D5500] Android_Mali_T6xx
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042817900] Android_Mali_T7xx
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [00000240428D4700] Android_Mali_T8xx
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042807400] Android_Mali_G71
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042855700] Android_Mali_G72
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042804300] Android_Mali_G72_Vulkan
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042857400] Android_Mali_G76
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042805900] Android_Mali_G76_Vulkan
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042857000] Android_Mali_G77
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042804C00] Android_Mali_G77_Vulkan
+[2021.05.12-20.33.01:165][908]LogDeviceProfile: Device profile begin destroy: [0000024042856300] Android_Vulkan_SM5
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042805800] Android_PowerVR_G6xxx
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042856E00] Android_PowerVR_GT7xxx
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042807900] Android_PowerVR_GE8xxx
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042855400] Android_PowerVR_GM9xxx
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042807000] Android_PowerVR_GM9xxx_Vulkan
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042855300] Android_TegraK1
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042804900] Android_Unknown_Vulkan
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042854300] Lumin
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042806900] Lumin_Desktop
+[2021.05.12-20.33.01:166][908]LogDeviceProfile: Device profile begin destroy: [0000024042857A00] HoloLens
+[2021.05.12-20.33.02:401][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:401][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:401][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:401][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:401][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:401][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:402][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:403][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:403][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:403][908]LogActorComponent: UnregisterComponent: (None.None) Not registered. Aborting.
+[2021.05.12-20.33.02:403][908]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.05.12-20.33.03:362][908]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2021.05.12-20.33.05:141][908]LogWorld: UWorld::CleanupWorld for None, bSessionEnded=true, bCleanupResources=true
+[2021.05.12-20.33.05:170][908]LogExit: Editor shut down
+[2021.05.12-20.33.05:427][908]LogExit: Transaction tracking system shut down
+[2021.05.12-20.33.14:238][908]LogExit: Object subsystem successfully closed.
+[2021.05.12-20.33.15:073][908]LogShaderCompilers: Display: Shaders left to compile 0
