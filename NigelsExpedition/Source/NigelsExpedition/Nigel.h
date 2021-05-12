@@ -4,7 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
@@ -12,9 +11,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
-
 #include "Blueprint/UserWidget.h"
-
 
 #include "Nigel.generated.h"
 
@@ -46,6 +43,9 @@ public:
 	// Called when player press key E
 	void OnAction();
 	void OnActionEsc();
+
+	//
+	void RestartLvl();
 
 public:	
 	// Called every frame
@@ -87,4 +87,8 @@ public:
 private:
 	//dead check
 	bool bDead;
+
+	void SaveGame();
+
+	void LoadGame();
 };

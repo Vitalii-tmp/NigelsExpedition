@@ -11,7 +11,10 @@
 #include "OptionsActor.h"
 #include "Blueprint/UserWidget.h"
 #include "GameFramework/PlayerController.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "GameFramework/Actor.h"
 #include "Kismet/GameplayStatics.h"
+#include "GameSave.h"
 
 // Sets default values
 ANigel::ANigel()
@@ -136,6 +139,12 @@ void ANigel::BeginPlay()
 			ArtifactWidget->AddToViewport();
 		}
 	}
+	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ANigel::OnOverlapBegin);
+
+
+	//Load game from game save instance
+	LoadGame();
+	
 }
 
 // Called every frame
@@ -218,6 +227,12 @@ void ANigel::OnActionEsc() {
 }
 
 
+void ANigel::RestartLvl()
+{
+	//reload current lvl
+	UGameplayStatics::OpenLevel(this, FName(*GetWorld()->GetName(), false));
+}
+
 //Called when trigger capsule is on actor
 void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
@@ -255,12 +270,33 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 		
 		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Visible);
 	}
+
+	if (OtherActor->ActorHasTag("DieSpace"))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("DieSpace"));
+		bDead = true;
+
+		GetMesh()->SetSimulatePhysics(true);
+
+		
+
+		//Restart game but before wait 4s
+		FTimerHandle UnsedHandle;
+		GetWorldTimerManager().SetTimer(
+			UnsedHandle, this, &ANigel::RestartLvl, 2.0f, false);
+		
+	}
+
+	if (OtherActor->ActorHasTag("CheckPoint"))
+	{
+		SaveGame();
+	}
 }
 
 //Called when trigger capsule go from actor
 void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 	int32 OtherBodyIndex)
-{
+{	
 	if (OtherActor && OtherActor != this && OtherComp)
 	{
 		//set actors null
@@ -275,4 +311,37 @@ void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 		DoorWidget->GetWidgetFromName("text_options")->SetVisibility(ESlateVisibility::Hidden);
 		DoorWidget->GetWidgetFromName("text_artifacts")->SetVisibility(ESlateVisibility::Hidden);
 	}
+
+	
+}
+
+
+void ANigel::SaveGame()
+{
+	//Create an instance of GameSave class
+	UGameSave* GameSaveInstance = Cast<UGameSave>(UGameplayStatics::CreateSaveGameObject(UGameSave::StaticClass()));
+
+	//Set the save game instance location equal to the players current location
+	GameSaveInstance->PlayerLocation = this->GetActorLocation();
+
+	//Save the game save instance
+	UGameplayStatics::SaveGameToSlot(GameSaveInstance, TEXT("FirstSlot"), 0);
+
+	//Log a message
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Saved"));
+}
+
+void ANigel::LoadGame()
+{
+	//Create an instance of GameSave class
+	UGameSave* GameSaveInstance = Cast<UGameSave>(UGameplayStatics::CreateSaveGameObject(UGameSave::StaticClass()));
+
+	//Load the saved game into our save game instance
+	GameSaveInstance = Cast<UGameSave>(UGameplayStatics::LoadGameFromSlot("FirstSlot",0));
+
+	//Set player location to loaded location from save game instance
+	this->SetActorLocation(GameSaveInstance->PlayerLocation);
+
+	//Log a message
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Loaded"));
 }
