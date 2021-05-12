@@ -9,12 +9,12 @@
   
   -------------------------------------------------------------------------------
   --------------------Project: Default-------------------------------------------
-  MapActor.cpp (0:02.40 at +0:00)
-  UE4Editor-NigelsExpedition-0003.lib (0:00.21 at +0:02)
-     Creating library E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0003.lib and object E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0003.exp
-  UE4Editor-NigelsExpedition-0003.dll (0:01.20 at +0:02)
-     Creating library E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0003.suppressed.lib and object E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0003.suppressed.exp
-  NigelsExpeditionEditor.target (0:00.21 at +0:03)
+  Nigel.cpp (0:06.67 at +0:00)
+  UE4Editor-NigelsExpedition-0010.lib (0:00.28 at +0:06)
+     Creating library E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0010.lib and object E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0010.exp
+  UE4Editor-NigelsExpedition-0010.dll (0:01.25 at +0:06)
+     Creating library E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0010.suppressed.lib and object E:\programming (zanachki)\UnrealEngine\NigelsExpedition\,\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0010.suppressed.exp
+  NigelsExpeditionEditor.target (0:00.17 at +0:08)
   ---------------------- Done ----------------------
   
       Rebuild All: 1 succeeded, 0 failed, 0 skipped
@@ -22,5 +22,5 @@
   1 build system warning(s):
      - License is invalid
   
-  Total time in XGE executor: 4,20 seconds
-  Total execution time: 5,23 seconds
+  Total time in XGE executor: 8,60 seconds
+  Total execution time: 9,67 seconds

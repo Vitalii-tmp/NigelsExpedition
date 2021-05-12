@@ -120,10 +120,20 @@ void ANigel::BeginPlay()
 
 	if(MapMenuWidgetClass)
 	{
-		MapWidget = CreateWidget<UUserWidget>(GetWorld(), MapMenuWidgetClass);;
+		MapWidget = CreateWidget<UUserWidget>(GetWorld(), MapMenuWidgetClass);
 		if(MapWidget)
 		{
 			MapWidget->AddToViewport();
+		}
+	}
+
+	if(ArtifactMenuWidgetClass)
+	{
+		ArtifactWidget = CreateWidget<UUserWidget>(GetWorld(), ArtifactMenuWidgetClass);
+
+		if(ArtifactWidget)
+		{
+			ArtifactWidget->AddToViewport();
 		}
 	}
 }
@@ -181,6 +191,10 @@ void ANigel::OnAction()
 
 		UGameplayStatics::SetGamePaused(GetWorld(), true);
 	}
+	else if(ArtifactWidget)
+	{
+		ArtifactWidget->SetVisibility(ESlateVisibility::Visible);
+	}
 }
 
 void ANigel::OnActionEsc() {
@@ -196,6 +210,11 @@ void ANigel::OnActionEsc() {
 
 	  MapLevels->LoadLevel();
   }
+
+	if(ArtifactWidget->Visibility == ESlateVisibility::Visible)
+	{
+		ArtifactWidget->SetVisibility(ESlateVisibility::Hidden);
+	}
 }
 
 
@@ -216,6 +235,11 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 		MapLevels = Cast<AMapActor>(OtherActor);
 
 		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Visible);
+	}
+
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AArtifactActor::StaticClass()) && ArtifactWidget->Visibility == ESlateVisibility::Visible)
+	{
+		DoorWidget->GetWidgetFromName("text_artifacts")->SetVisibility(ESlateVisibility::Hidden);
 	}
 
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AArtifactActor::StaticClass()))

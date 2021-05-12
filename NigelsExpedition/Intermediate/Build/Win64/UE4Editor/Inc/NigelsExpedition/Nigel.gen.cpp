@@ -235,6 +235,10 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MapMenuWidgetClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_MapMenuWidgetClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ArtifactMenuWidgetClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ArtifactMenuWidgetClass;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -296,12 +300,22 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass = { "MapMenuWidgetClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANigel, MapMenuWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass_MetaData[] = {
+		{ "Category", "Nigel" },
+		{ "Comment", "// Widget for artifacts\n" },
+		{ "ModuleRelativePath", "Nigel.h" },
+		{ "ToolTip", "Widget for artifacts" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass = { "ArtifactMenuWidgetClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANigel, ArtifactMenuWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANigel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_FollowCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_TriggerCapsule,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_HelpWidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANigel_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ANigel>::IsAbstract,
@@ -330,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANigel, 308773464);
+	IMPLEMENT_CLASS(ANigel, 3355590706);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<ANigel>()
 	{
 		return ANigel::StaticClass();
