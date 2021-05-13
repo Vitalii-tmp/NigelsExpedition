@@ -39,7 +39,8 @@ ANigel::ANigel()
 
 	//how we can control player in air
 	//GetCharacterMovement()->AirControl = 0.2f;
-
+	//GetCharacterMovement()->MaxWalkSpeed = 10.f;
+	
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 
@@ -69,6 +70,9 @@ ANigel::ANigel()
 	MapLevels = NULL;
 	Artifacts = NULL;
 	Options = NULL;
+
+	//
+	IsPushing = false;
 }
 
 void ANigel::MoveForward(float Axis)
@@ -155,8 +159,8 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAction("ActionE", IE_Released, this, &ANigel::OnAction);
 
 	//Jumping
-	//PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	//PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 	//Moving forward
 	PlayerInputComponent->BindAxis("MoveForward", this, &ANigel::MoveForward);
