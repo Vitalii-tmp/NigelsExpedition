@@ -42,6 +42,8 @@ public:
 
 	// Called when player press key E
 	void OnAction();
+	void OnActionEsc();
+	void OnActionX();
 
 	//
 	void RestartLvl();
@@ -78,9 +80,17 @@ public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> MapMenuWidgetClass;
 	class UUserWidget* MapWidget;
+
+	// Widget for artifacts
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> ArtifactMenuWidgetClass;
+	class UUserWidget* ArtifactWidget;
 private:
 	//dead check
 	bool bDead;
+
+	//artifact check
+	bool bNAmericaArtifact = false;
 
 	void SaveGame();
 
