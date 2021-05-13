@@ -36,7 +36,7 @@ public:
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
 
-	protected:
+protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
@@ -64,6 +64,7 @@ public:
 	UFUNCTION()
 		void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp,
 			int32 OtherBodyIndex);
+	
 
 	// Actors for main menu
 	class ADoorActor* DoorExit;
@@ -80,6 +81,9 @@ public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> MapMenuWidgetClass;
 	class UUserWidget* MapWidget;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool IsPushing;
 
 	// Widget for artifacts
 	UPROPERTY(EditAnywhere)
