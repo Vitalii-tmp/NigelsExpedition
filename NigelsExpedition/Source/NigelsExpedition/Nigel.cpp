@@ -200,7 +200,7 @@ void ANigel::OnAction()
 	if(MapLevels)
 	{
 		//Set map widget visible
-		MapWidget->GetWidgetFromName("Image_map")->SetVisibility(ESlateVisibility::Visible);
+		MapWidget->SetVisibility(ESlateVisibility::Visible);
 
 		//Player controller
 		APlayerController* MyController = GetWorld()->GetFirstPlayerController();
@@ -231,10 +231,10 @@ void ANigel::OnAction()
 }
 
 void ANigel::OnActionEsc() {
-  	if(MapWidget->GetWidgetFromName("Image_map")->Visibility == ESlateVisibility::Visible) {
+  	if(MapWidget->Visibility == ESlateVisibility::Visible) {
 
 		//Set Map widget hidden   
-	  	MapWidget->GetWidgetFromName("Image_map")->SetVisibility(ESlateVisibility::Hidden);
+	  	MapWidget->SetVisibility(ESlateVisibility::Hidden);
 
 		//Player controller
 	  	APlayerController* MyController = GetWorld()->GetFirstPlayerController();
