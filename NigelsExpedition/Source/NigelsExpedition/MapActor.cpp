@@ -38,5 +38,6 @@ void AMapActor::Tick(float DeltaTime)
 //Called to load level
 void AMapActor::LoadLevel()
 {
-	UGameplayStatics::OpenLevel(GetWorld(), "Game/Maps/Locations/FirstLocations");
+	//UGameplayStatics::OpenLevel(GetWorld(), "Game/Maps/Locations/ThirdPersonExampleMap");
+	GetWorld()->ServerTravel(FString("/Game/Maps/Locations/FirstLocations"));
 }
