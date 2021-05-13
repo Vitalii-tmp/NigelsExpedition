@@ -7,7 +7,6 @@
 UGameSave::UGameSave()
 {
 	PlayerLocation = FVector(0.f, 0.f, 0.f);
-	isNAmericaArtifact = false;
 }
 
 
