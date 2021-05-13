@@ -43,6 +43,7 @@ public:
 	// Called when player press key E
 	void OnAction();
 	void OnActionEsc();
+	void OnActionX();
 
 	//
 	void RestartLvl();
@@ -87,6 +88,9 @@ public:
 private:
 	//dead check
 	bool bDead;
+
+	//artifact check
+	bool bNAmericaArtifact = false;
 
 	void SaveGame();
 

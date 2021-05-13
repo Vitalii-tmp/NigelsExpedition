@@ -21,5 +21,7 @@ public:
 	UPROPERTY(EditAnywhere)
 		FVector PlayerLocation;
 
+	UPROPERTY(EditAnywhere)
+		bool isNAmericaArtifact;
 	
 };

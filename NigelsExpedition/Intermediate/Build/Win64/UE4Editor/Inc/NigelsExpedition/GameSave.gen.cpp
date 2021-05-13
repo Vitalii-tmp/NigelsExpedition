@@ -36,6 +36,11 @@ void EmptyLinkFunctionForGeneratedCodeGameSave() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerLocation_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_PlayerLocation;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_isNAmericaArtifact_MetaData[];
+#endif
+		static void NewProp_isNAmericaArtifact_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isNAmericaArtifact;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -58,8 +63,20 @@ void EmptyLinkFunctionForGeneratedCodeGameSave() {}
 	};
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_UGameSave_Statics::NewProp_PlayerLocation = { "PlayerLocation", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UGameSave, PlayerLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_UGameSave_Statics::NewProp_PlayerLocation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGameSave_Statics::NewProp_PlayerLocation_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact_MetaData[] = {
+		{ "Category", "GameSave" },
+		{ "ModuleRelativePath", "GameSave.h" },
+	};
+#endif
+	void Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact_SetBit(void* Obj)
+	{
+		((UGameSave*)Obj)->isNAmericaArtifact = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact = { "isNAmericaArtifact", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGameSave), &Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UGameSave_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGameSave_Statics::NewProp_PlayerLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UGameSave_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UGameSave>::IsAbstract,
@@ -88,7 +105,7 @@ void EmptyLinkFunctionForGeneratedCodeGameSave() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGameSave, 3315846520);
+	IMPLEMENT_CLASS(UGameSave, 1755470578);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<UGameSave>()
 	{
 		return UGameSave::StaticClass();
