@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\NigelsExpedition.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8FDFDA44-5F0C-4399-9276-F5E125218EDD}</UniqueIdentifier>
+      <UniqueIdentifier>{9F8E8376-C132-4DB5-923C-077626D38980}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\NigelsExpedition.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{2FE2593C-D02F-480F-89FA-908227A36B50}</UniqueIdentifier>
+      <UniqueIdentifier>{F2F1B35E-ED03-4776-9899-D9DBBF3D10CF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\NigelsExpedition">
-      <UniqueIdentifier>{895134C6-A90A-4138-BCA9-02FF64745F78}</UniqueIdentifier>
+      <UniqueIdentifier>{D7009B87-CB02-477B-83B6-64F74AE952C6}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\NigelsExpedition\ArtifactActor.cpp">
       <Filter>Source\NigelsExpedition</Filter>

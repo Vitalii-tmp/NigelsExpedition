@@ -54,6 +54,8 @@ ANigel::ANigel()
 	FollowCamera->bUsePawnControlRotation = true;
 
 	bDead = false;
+	//bNAmericaArtifact = false;
+
 
 	//Trigger Capsule size, add to root
 	TriggerCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("Trigger Capsule"));
@@ -71,8 +73,12 @@ ANigel::ANigel()
 	Artifacts = NULL;
 	Options = NULL;
 
+
+	PrimaryActorTick.bTickEvenWhenPaused = true;
+
 	//
 	IsPushing = false;
+
 }
 
 void ANigel::MoveForward(float Axis)
@@ -125,18 +131,32 @@ void ANigel::BeginPlay()
 
 	if(MapMenuWidgetClass)
 	{
-		MapWidget = CreateWidget<UUserWidget>(GetWorld(), MapMenuWidgetClass);;
+		MapWidget = CreateWidget<UUserWidget>(GetWorld(), MapMenuWidgetClass);
 		if(MapWidget)
 		{
 			MapWidget->AddToViewport();
 		}
 	}
 
+	if(ArtifactMenuWidgetClass)
+	{
+		ArtifactWidget = CreateWidget<UUserWidget>(GetWorld(), ArtifactMenuWidgetClass);
+
+		if(ArtifactWidget)
+		{
+			ArtifactWidget->AddToViewport();
+		}
+	}
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ANigel::OnOverlapBegin);
 
 
 	//Load game from game save instance
 	LoadGame();
+
+	if(bNAmericaArtifact){
+		//Set first artifact visible(hide foreground layout)
+		ArtifactWidget->GetWidgetFromName("ImageFirstBlack")->SetVisibility(ESlateVisibility::Hidden);
+	}
 	
 }
 
@@ -157,6 +177,10 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	//E key(using in main menu)
 	PlayerInputComponent->BindAction("ActionE", IE_Released, this, &ANigel::OnAction);
+
+	//Temporary key actions
+	PlayerInputComponent->BindAction("ActionEsc", IE_Released, this, &ANigel::OnActionEsc).bExecuteWhenPaused = true;
+	PlayerInputComponent->BindAction("ActionX", IE_Released, this, &ANigel::OnActionX);
 
 	//Jumping
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
@@ -182,16 +206,79 @@ void ANigel::OnAction()
 	if(MapLevels)
 	{
 		//Set map widget visible
-		MapWidget->GetWidgetFromName("Image_map")->SetVisibility(ESlateVisibility::Visible);
+		MapWidget->SetVisibility(ESlateVisibility::Visible);
+
+		//Player controller
 		APlayerController* MyController = GetWorld()->GetFirstPlayerController();
 
+		//Set mouse events enable
 		MyController->bShowMouseCursor = true;
 		MyController->bEnableClickEvents = true;
 		MyController->bEnableMouseOverEvents = true;
 
+		//Set game pause
+		UGameplayStatics::SetGamePaused(GetWorld(), true);
+	}
+	if(Artifacts)
+	{
+		//Set visible widget with artifacts
+		ArtifactWidget->SetVisibility(ESlateVisibility::Visible);
+
+		//Player controller
+		APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+
+		//Set mouse events enable
+		MyController->bEnableClickEvents = true;
+		MyController->bEnableMouseOverEvents = true;
+
+		//Set game pause
 		UGameplayStatics::SetGamePaused(GetWorld(), true);
 	}
 }
+
+void ANigel::OnActionEsc() {
+  	if(MapWidget->Visibility == ESlateVisibility::Visible) {
+
+		//Set Map widget hidden   
+	  	MapWidget->SetVisibility(ESlateVisibility::Hidden);
+
+		//Player controller
+	  	APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+
+		//Setting mouse events disable
+	  	MyController->bShowMouseCursor = false;
+	  	MyController->bEnableClickEvents = false;
+	  	MyController->bEnableMouseOverEvents = false;
+
+		//Set pause false
+	  	UGameplayStatics::SetGamePaused(GetWorld(), false);
+
+	  	MapLevels->LoadLevel();
+  	}
+
+	if(ArtifactWidget->Visibility == ESlateVisibility::Visible)
+	{
+		//Set Artifact widget hidden   
+		ArtifactWidget->SetVisibility(ESlateVisibility::Hidden);
+
+		//Player controller
+	  	APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+
+		//Setting mouse events disable
+	  	MyController->bEnableClickEvents = false;
+	  	MyController->bEnableMouseOverEvents = false;
+
+		//Set pause false
+	  	UGameplayStatics::SetGamePaused(GetWorld(), false);
+	}
+}
+
+//temporary method to load main manu by x key
+void ANigel::OnActionX()
+{
+	GetWorld()->ServerTravel(FString("/Game/Maps/MainMenu/MenuMap"));
+}
+
 
 void ANigel::RestartLvl()
 {
@@ -216,6 +303,11 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 		MapLevels = Cast<AMapActor>(OtherActor);
 
 		DoorWidget->GetWidgetFromName("text_map")->SetVisibility(ESlateVisibility::Visible);
+	}
+
+	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AArtifactActor::StaticClass()) && ArtifactWidget->Visibility == ESlateVisibility::Visible)
+	{
+		DoorWidget->GetWidgetFromName("text_artifacts")->SetVisibility(ESlateVisibility::Hidden);
 	}
 
 	if (OtherActor && OtherActor != this && OtherComp && OtherActor->GetClass()->IsChildOf(AArtifactActor::StaticClass()))
@@ -252,6 +344,13 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 	{
 		SaveGame();
 	}
+
+	//check if on actor with tag
+	if(OtherActor->ActorHasTag("Artifact"))
+	{
+		bNAmericaArtifact = true;
+		OtherActor->Destroy();
+	}
 }
 
 //Called when trigger capsule go from actor
@@ -285,6 +384,9 @@ void ANigel::SaveGame()
 	//Set the save game instance location equal to the players current location
 	GameSaveInstance->PlayerLocation = this->GetActorLocation();
 
+	//Set after checkpoint if artifact is pick
+	GameSaveInstance->isNAmericaArtifact = this->bNAmericaArtifact;
+
 	//Save the game save instance
 	UGameplayStatics::SaveGameToSlot(GameSaveInstance, TEXT("FirstSlot"), 0);
 
@@ -302,6 +404,9 @@ void ANigel::LoadGame()
 
 	//Set player location to loaded location from save game instance
 	this->SetActorLocation(GameSaveInstance->PlayerLocation);
+
+	//Set for player is artifact picked
+	this->bNAmericaArtifact = GameSaveInstance->isNAmericaArtifact;
 
 	//Log a message
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Loaded"));
