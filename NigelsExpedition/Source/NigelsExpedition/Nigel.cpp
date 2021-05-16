@@ -147,15 +147,44 @@ void ANigel::BeginPlay()
 			ArtifactWidget->AddToViewport();
 		}
 	}
+
+	if(DialogMenuWidgetClass)
+	{
+		DialogMenuWidget = CreateWidget<UUserWidget>(GetWorld(), DialogMenuWidgetClass);
+
+		if(DialogMenuWidget)
+		{
+			DialogMenuWidget->AddToViewport();
+		}
+	}
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ANigel::OnOverlapBegin);
 
 
 	//Load game from game save instance
 	LoadGame();
 
-	if (UGameplayStatics::GetCurrentLevelName(this) == "MenuMap")
+	if (UGameplayStatics::GetCurrentLevelName(this) == "MenuMap"){
 		this->SetActorLocation(FVector(72.f, 50.f, 200.f));
 
+		//Log a message
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("MenuMap"));
+
+		if(bCkeckFirstTimeMenuLvl){
+			DialogMenuWidget->SetVisibility(ESlateVisibility::Visible);
+
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Check widget"));
+
+			
+
+			//Player controller
+			//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
+
+			// //Set mouse events enable
+			// MyController->bEnableKeyboardEvents = false;
+
+			
+		}
+	}
 	if (bNAmericaArtifact) {
 		//Set first artifact visible(hide foreground layout)
 		ArtifactWidget->GetWidgetFromName("ImageFirstBlack")->SetVisibility(ESlateVisibility::Hidden);
@@ -167,6 +196,13 @@ void ANigel::BeginPlay()
 void ANigel::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if(DialogMenuWidget->Visibility == ESlateVisibility::Visible && DialogMenuWidget->GetWidgetFromName("text1")->Visibility == ESlateVisibility::Visible){
+		//Set game pause
+		//UGameplayStatics::SetGamePaused(GetWorld(), true);
+
+		bDead = true;
+	}
 }
 
 // Called to bind functionality to input
@@ -180,6 +216,8 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 	//E key(using in main menu)
 	PlayerInputComponent->BindAction("ActionE", IE_Released, this, &ANigel::OnAction);
+
+	PlayerInputComponent->BindAction("ActionEnter", IE_Released, this, &ANigel::OnActionEnter).bExecuteWhenPaused = true;
 
 	//Temporary key actions
 	PlayerInputComponent->BindAction("ActionEsc", IE_Released, this, &ANigel::OnActionEsc).bExecuteWhenPaused = true;
@@ -276,7 +314,9 @@ void ANigel::OnActionEsc() {
 		UGameplayStatics::SetGamePaused(GetWorld(), false);
 	}
 
-
+	if(DialogMenuWidget->Visibility == ESlateVisibility::Visible){
+		DialogMenuWidget->SetVisibility(ESlateVisibility::Hidden);
+	}
 }
 
 //temporary method to load main manu by x key
@@ -285,6 +325,35 @@ void ANigel::OnActionX()
 	GetWorld()->ServerTravel(FString("/Game/Maps/MainMenu/MenuMap"));
 }
 
+void ANigel::OnActionEnter(){
+	if(DialogMenuWidget->GetWidgetFromName("text1")->Visibility == ESlateVisibility::Visible){
+		DialogMenuWidget->GetWidgetFromName("text1")->SetVisibility(ESlateVisibility::Hidden);
+		DialogMenuWidget->GetWidgetFromName("text2")->SetVisibility(ESlateVisibility::Visible);
+	}
+	else if(DialogMenuWidget->GetWidgetFromName("text2")->Visibility == ESlateVisibility::Visible){
+		DialogMenuWidget->GetWidgetFromName("text2")->SetVisibility(ESlateVisibility::Hidden);
+		DialogMenuWidget->GetWidgetFromName("text3")->SetVisibility(ESlateVisibility::Visible);
+	}
+	else if(DialogMenuWidget->GetWidgetFromName("text3")->Visibility == ESlateVisibility::Visible){
+		DialogMenuWidget->GetWidgetFromName("text3")->SetVisibility(ESlateVisibility::Hidden);
+		DialogMenuWidget->GetWidgetFromName("text4")->SetVisibility(ESlateVisibility::Visible);
+	}
+	else if(DialogMenuWidget->GetWidgetFromName("text4")->Visibility == ESlateVisibility::Visible){
+		DialogMenuWidget->GetWidgetFromName("text4")->SetVisibility(ESlateVisibility::Hidden);
+		DialogMenuWidget->GetWidgetFromName("text5")->SetVisibility(ESlateVisibility::Visible);
+	}
+	else if(DialogMenuWidget->GetWidgetFromName("text5")->Visibility == ESlateVisibility::Visible){
+		DialogMenuWidget->SetVisibility(ESlateVisibility::Hidden);
+
+		//Set pause false
+		//UGameplayStatics::SetGamePaused(GetWorld(), false);
+
+		bCkeckFirstTimeMenuLvl = false;
+		SaveGame();
+
+		bDead = false;
+	}
+}
 
 void ANigel::RestartLvl()
 {
@@ -388,12 +457,16 @@ void ANigel::SaveGame()
 	//Create an instance of GameSave class
 	UGameSave* GameSaveInstance = Cast<UGameSave>(UGameplayStatics::CreateSaveGameObject(UGameSave::StaticClass()));
 
-	//Set the save game instance location equal to the players current location
-	GameSaveInstance->PlayerLocation = this->GetActorLocation();
+	if(UGameplayStatics::GetCurrentLevelName(this) != "MenuMap")
+	{
+		//Set the save game instance location equal to the players current location
+		GameSaveInstance->PlayerLocation = this->GetActorLocation();
 
-	//Set after checkpoint if artifact is pick
-	GameSaveInstance->isNAmericaArtifact = this->bNAmericaArtifact;
-
+		//Set after checkpoint if artifact is pick
+		GameSaveInstance->isNAmericaArtifact = this->bNAmericaArtifact;
+	}
+	//Set false after first time game
+	GameSaveInstance->isFirstTimeMenuMap = this->bCkeckFirstTimeMenuLvl;
 	//Save the game save instance
 	UGameplayStatics::SaveGameToSlot(GameSaveInstance, TEXT("FirstSlot"), 0);
 
@@ -415,6 +488,9 @@ void ANigel::LoadGame()
 
 	//Set for player is artifact picked
 	this->bNAmericaArtifact = GameSaveInstance->isNAmericaArtifact;
+
+	//Set first time game in game instance
+	this->bCkeckFirstTimeMenuLvl = GameSaveInstance->isFirstTimeMenuMap;
 
 	//Log a message
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Loaded"));

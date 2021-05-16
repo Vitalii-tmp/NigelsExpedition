@@ -44,6 +44,7 @@ protected:
 	void OnAction();
 	void OnActionEsc();
 	void OnActionX();
+	void OnActionEnter();
 
 	//
 	UFUNCTION(BlueprintCallable)
@@ -91,6 +92,10 @@ public:
 		TSubclassOf<class UUserWidget> ArtifactMenuWidgetClass;
 	class UUserWidget* ArtifactWidget;
 
+	// Widget for menu dialogs
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> DialogMenuWidgetClass;
+	class UUserWidget* DialogMenuWidget;
 	
 private:
 	//dead check
@@ -98,6 +103,9 @@ private:
 
 	//artifact check
 	bool bNAmericaArtifact = false;
+
+	//first time menu map check
+	bool bCkeckFirstTimeMenuLvl = false;
 
 	UFUNCTION()
 	void SaveGame();

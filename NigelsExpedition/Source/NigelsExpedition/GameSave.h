@@ -23,5 +23,8 @@ public:
 
 	UPROPERTY(EditAnywhere)
 		bool isNAmericaArtifact;
+
+	UPROPERTY(EditAnywhere)
+		bool isFirstTimeMenuMap;
 	
 };
