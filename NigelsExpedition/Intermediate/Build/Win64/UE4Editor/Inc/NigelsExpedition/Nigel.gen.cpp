@@ -26,6 +26,20 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ANigel::execLoadGame)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->LoadGame();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ANigel::execSaveGame)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->SaveGame();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ANigel::execOnOverlapEnd)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp);
@@ -50,14 +64,46 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		P_THIS->OnOverlapBegin(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ANigel::execRestartLvl)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RestartLvl();
+		P_NATIVE_END;
+	}
 	void ANigel::StaticRegisterNativesANigel()
 	{
 		UClass* Class = ANigel::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "LoadGame", &ANigel::execLoadGame },
 			{ "OnOverlapBegin", &ANigel::execOnOverlapBegin },
 			{ "OnOverlapEnd", &ANigel::execOnOverlapEnd },
+			{ "RestartLvl", &ANigel::execRestartLvl },
+			{ "SaveGame", &ANigel::execSaveGame },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ANigel_LoadGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANigel_LoadGame_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Nigel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANigel_LoadGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANigel, nullptr, "LoadGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANigel_LoadGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANigel_LoadGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANigel_LoadGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANigel_LoadGame_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ANigel_OnOverlapBegin_Statics
 	{
@@ -204,6 +250,51 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ANigel_RestartLvl_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANigel_RestartLvl_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//\n" },
+		{ "ModuleRelativePath", "Nigel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANigel_RestartLvl_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANigel, nullptr, "RestartLvl", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANigel_RestartLvl_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANigel_RestartLvl_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANigel_RestartLvl()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANigel_RestartLvl_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ANigel_SaveGame_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ANigel_SaveGame_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Nigel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ANigel_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ANigel, nullptr, "SaveGame", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ANigel_SaveGame_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ANigel_SaveGame_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ANigel_SaveGame()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ANigel_SaveGame_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ANigel_NoRegister()
 	{
 		return ANigel::StaticClass();
@@ -253,8 +344,11 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_NigelsExpedition,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ANigel_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ANigel_LoadGame, "LoadGame" }, // 1654918565
 		{ &Z_Construct_UFunction_ANigel_OnOverlapBegin, "OnOverlapBegin" }, // 2092936442
 		{ &Z_Construct_UFunction_ANigel_OnOverlapEnd, "OnOverlapEnd" }, // 2026913743
+		{ &Z_Construct_UFunction_ANigel_RestartLvl, "RestartLvl" }, // 202988456
+		{ &Z_Construct_UFunction_ANigel_SaveGame, "SaveGame" }, // 3870826921
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANigel_Statics::Class_MetaDataParams[] = {
@@ -361,7 +455,7 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANigel, 4016520741);
+	IMPLEMENT_CLASS(ANigel, 3127107360);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<ANigel>()
 	{
 		return ANigel::StaticClass();
