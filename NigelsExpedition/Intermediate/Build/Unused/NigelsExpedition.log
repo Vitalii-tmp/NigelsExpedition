@@ -1,1 +1,20 @@
-﻿  Системе не удается найти указанный диск.
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\MyStudy\FUGAS\NigelsExpedition).
+  Parsing headers for NigelsExpeditionEditor
+    Running UnrealHeaderTool "D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\NigelsExpedition.uproject" "D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\NigelsExpeditionEditor\Development\NigelsExpeditionEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\vital\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+  Reflection code generated for NigelsExpeditionEditor in 4.5054518 seconds
+  Building NigelsExpeditionEditor...
+  Using Visual Studio 2019 14.28.29914 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 9 actions with 8 processes...
+    [1/9] NigelsExpedition.init.gen.cpp
+    [2/9] ButtonBox.cpp
+    [3/9] Nigel.gen.cpp
+    [4/9] Nigel.cpp
+    [5/9] BoxTrigger.cpp
+    [6/9] BoxTrigger.gen.cpp
+    [7/9] UE4Editor-NigelsExpedition-0001.lib
+       Creating library D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0001.lib and object D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0001.exp
+    [8/9] UE4Editor-NigelsExpedition-0001.dll
+       Creating library D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0001.suppressed.lib and object D:\MyStudy\FUGAS\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\UE4Editor-NigelsExpedition-0001.suppressed.exp
+    [9/9] NigelsExpeditionEditor.target
+  Total time in Parallel executor: 8.09 seconds
+  Total execution time: 13.57 seconds

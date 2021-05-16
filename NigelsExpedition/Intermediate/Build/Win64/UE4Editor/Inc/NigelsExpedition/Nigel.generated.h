@@ -19,14 +19,20 @@ struct FHitResult;
 #define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_SPARSE_DATA
 #define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execLoadGame); \
+	DECLARE_FUNCTION(execSaveGame); \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
-	DECLARE_FUNCTION(execOnOverlapBegin);
+	DECLARE_FUNCTION(execOnOverlapBegin); \
+	DECLARE_FUNCTION(execRestartLvl);
 
 
 #define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execLoadGame); \
+	DECLARE_FUNCTION(execSaveGame); \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
-	DECLARE_FUNCTION(execOnOverlapBegin);
+	DECLARE_FUNCTION(execOnOverlapBegin); \
+	DECLARE_FUNCTION(execRestartLvl);
 
 
 #define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_INCLASS_NO_PURE_DECLS \

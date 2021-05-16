@@ -46,6 +46,7 @@ protected:
 	void OnActionX();
 
 	//
+	UFUNCTION(BlueprintCallable)
 	void RestartLvl();
 
 public:	
@@ -89,6 +90,8 @@ public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> ArtifactMenuWidgetClass;
 	class UUserWidget* ArtifactWidget;
+
+	
 private:
 	//dead check
 	bool bDead;
@@ -96,7 +99,9 @@ private:
 	//artifact check
 	bool bNAmericaArtifact = false;
 
+	UFUNCTION()
 	void SaveGame();
 
+	UFUNCTION()
 	void LoadGame();
 };
