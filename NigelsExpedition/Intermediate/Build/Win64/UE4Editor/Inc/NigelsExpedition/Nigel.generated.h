@@ -16,8 +16,8 @@ struct FHitResult;
 #endif
 #define NIGELSEXPEDITION_Nigel_generated_h
 
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_SPARSE_DATA
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_RPC_WRAPPERS \
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_SPARSE_DATA
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execLoadGame); \
 	DECLARE_FUNCTION(execSaveGame); \
@@ -26,7 +26,7 @@ struct FHitResult;
 	DECLARE_FUNCTION(execRestartLvl);
 
 
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execLoadGame); \
 	DECLARE_FUNCTION(execSaveGame); \
@@ -35,7 +35,7 @@ struct FHitResult;
 	DECLARE_FUNCTION(execRestartLvl);
 
 
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_INCLASS_NO_PURE_DECLS \
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesANigel(); \
 	friend struct Z_Construct_UClass_ANigel_Statics; \
@@ -44,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(ANigel)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_INCLASS \
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_INCLASS \
 private: \
 	static void StaticRegisterNativesANigel(); \
 	friend struct Z_Construct_UClass_ANigel_Statics; \
@@ -53,7 +53,7 @@ public: \
 	DECLARE_SERIALIZER(ANigel)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_STANDARD_CONSTRUCTORS \
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ANigel(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ANigel) \
@@ -66,7 +66,7 @@ private: \
 public:
 
 
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_ENHANCED_CONSTRUCTORS \
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ANigel(ANigel&&); \
@@ -77,28 +77,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ANigel); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ANigel)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_PRIVATE_PROPERTY_OFFSET
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_18_PROLOG
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_GENERATED_BODY_LEGACY \
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_PRIVATE_PROPERTY_OFFSET
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_20_PROLOG
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_PRIVATE_PROPERTY_OFFSET \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_SPARSE_DATA \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_RPC_WRAPPERS \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_INCLASS \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_STANDARD_CONSTRUCTORS \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_PRIVATE_PROPERTY_OFFSET \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_SPARSE_DATA \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_RPC_WRAPPERS \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_INCLASS \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_GENERATED_BODY \
+#define NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_PRIVATE_PROPERTY_OFFSET \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_SPARSE_DATA \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_INCLASS_NO_PURE_DECLS \
-	NigelsExpedition_Source_NigelsExpedition_Nigel_h_21_ENHANCED_CONSTRUCTORS \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_PRIVATE_PROPERTY_OFFSET \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_SPARSE_DATA \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_INCLASS_NO_PURE_DECLS \
+	NigelsExpedition_Source_NigelsExpedition_Nigel_h_23_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

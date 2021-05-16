@@ -22,12 +22,34 @@ ADoorActor::ADoorActor()
 	HandMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Hand"));
 	HandMeshComponent->SetupAttachment(RootComponent);
 
+
+	static ConstructorHelpers::FObjectFinder<USoundCue> Background_Cue(TEXT("/Game/Sounds/Menu/Background_Cue.Background_Cue"));
+	static ConstructorHelpers::FObjectFinder<USoundCue> DoorOpening_Cue(TEXT("/Game/Sounds/Menu/DoorOpening_Cue.DoorOpening_Cue"));
+	static ConstructorHelpers::FObjectFinder<USoundCue> Torch_Cue(TEXT("/Game/Sounds/Menu/Torch_Cue.Torch_Cue"));
+
+	Background = CreateDefaultSubobject<UAudioComponent>(TEXT("Background"));
+	Background->Activate();
+	Background->SetSound(Background_Cue.Object);
+
+	DoorOpening = CreateDefaultSubobject<UAudioComponent>(TEXT("DoorOpening"));
+	DoorOpening->Activate();
+	DoorOpening->SetSound(DoorOpening_Cue.Object);
+
+	Torch = CreateDefaultSubobject<UAudioComponent>(TEXT("Torch"));
+	Torch->Activate();
+	Torch->SetSound(Torch_Cue.Object);
+
+
 }
 
 // Called when the game starts or when spawned
 void ADoorActor::BeginPlay()
 {
 	Super::BeginPlay();
+	Background->Play();
+	DoorOpening->Play();
+	Torch->Play();
+
 }
 
 // Called every frame

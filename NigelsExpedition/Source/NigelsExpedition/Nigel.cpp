@@ -22,6 +22,13 @@ ANigel::ANigel()
 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+
+	static ConstructorHelpers::FObjectFinder<USoundCue> Saving_Cue(TEXT("/Game/Sounds/Levels/Saving_Cue.Saving_Cue"));
+
+	Saving = CreateDefaultSubobject<UAudioComponent>(TEXT("Saving"));
+	Saving->Activate();
+	Saving->SetSound(Saving_Cue.Object);
+
 	//Set capsule size
 	GetCapsuleComponent()->InitCapsuleSize(42.0f, 96.0f);
 
@@ -115,7 +122,6 @@ void ANigel::MoveRight(float Axis)
 void ANigel::BeginPlay()
 {
 	Super::BeginPlay();
-
 
 	//Adding widgets to viewport
 	if (HelpWidgetClass)
@@ -348,6 +354,7 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 
 	if (OtherActor->ActorHasTag("CheckPoint"))
 	{
+		
 		SaveGame();
 	}
 
@@ -385,6 +392,9 @@ void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 
 void ANigel::SaveGame()
 {
+
+	Saving->Play();
+
 	//Create an instance of GameSave class
 	UGameSave* GameSaveInstance = Cast<UGameSave>(UGameplayStatics::CreateSaveGameObject(UGameSave::StaticClass()));
 

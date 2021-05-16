@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/AudioComponent.h"
+#include "Sound/SoundCue.h"
 #include "Components/StaticMeshComponent.h"
 #include "DoorActor.generated.h"
 
@@ -37,4 +39,12 @@ public:
 	// Function for exit from game
 	UFUNCTION(BlueprintCallable, Category = "Components")
 		void ExitGame();
+
+
+	UPROPERTY(EditAnywhere, Category = "Music")
+		UAudioComponent* Background;
+	UPROPERTY(EditAnywhere, Category = "Sound effects")
+		UAudioComponent* DoorOpening;
+	UPROPERTY(EditAnywhere, Category = "Sound effects")
+		UAudioComponent* Torch;
 };
