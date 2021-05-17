@@ -514,7 +514,7 @@ void ANigel::SaveGame()
 		//Set after checkpoint if artifact is pick
 		GameSaveInstance->isNAmericaArtifact = this->bNAmericaArtifact;
 
-		GameSaveInstance->isFirstTimeFLocation = true;
+		GameSaveInstance->isFirstTimeFLocation = this->bCheckFirstTimeFLocation;
 	}
 	//Set false after first time game
 	GameSaveInstance->isFirstTimeMenuMap = this->bCkeckFirstTimeMenuLvl;
@@ -543,7 +543,7 @@ void ANigel::LoadGame()
 	//Set first time game in game instance
 	this->bCkeckFirstTimeMenuLvl = GameSaveInstance->isFirstTimeMenuMap;
 
-	this->bCheckFirstTimeFLocation = true;
+	this->bCheckFirstTimeFLocation = GameSaveInstance->isFirstTimeFLocation;
 
 	//Log a message
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Loaded"));

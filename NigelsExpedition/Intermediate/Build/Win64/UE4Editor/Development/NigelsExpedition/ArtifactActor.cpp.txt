@@ -1,7 +1,7 @@
-E:\repo\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\Definitions.NigelsExpedition.h
-E:\repo\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition\ArtifactActor.h
-E:\repo\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\ArtifactActor.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\7\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Development\NigelsExpedition\Definitions.NigelsExpedition.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\7\NigelsExpedition\NigelsExpedition\Source\NigelsExpedition\ArtifactActor.h
+E:\programming (zanachki)\UnrealEngine\NigelsExpedition\7\NigelsExpedition\NigelsExpedition\Intermediate\Build\Win64\UE4Editor\Inc\NigelsExpedition\ArtifactActor.generated.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h
+E:\Angelina\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+E:\Angelina\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\BoxComponent.generated.h
