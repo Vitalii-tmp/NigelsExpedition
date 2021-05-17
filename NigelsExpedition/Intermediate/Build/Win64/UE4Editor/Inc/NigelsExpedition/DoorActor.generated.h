@@ -13,18 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define NIGELSEXPEDITION_DoorActor_generated_h
 
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_SPARSE_DATA
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_RPC_WRAPPERS \
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_SPARSE_DATA
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execExitGame);
 
 
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execExitGame);
 
 
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_INCLASS_NO_PURE_DECLS \
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesADoorActor(); \
 	friend struct Z_Construct_UClass_ADoorActor_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(ADoorActor)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_INCLASS \
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesADoorActor(); \
 	friend struct Z_Construct_UClass_ADoorActor_Statics; \
@@ -42,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(ADoorActor)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_STANDARD_CONSTRUCTORS \
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ADoorActor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ADoorActor) \
@@ -55,7 +55,7 @@ private: \
 public:
 
 
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_ENHANCED_CONSTRUCTORS \
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ADoorActor(ADoorActor&&); \
@@ -66,28 +66,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ADoorActor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ADoorActor)
 
 
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_PRIVATE_PROPERTY_OFFSET
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_10_PROLOG
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_GENERATED_BODY_LEGACY \
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_PRIVATE_PROPERTY_OFFSET
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_12_PROLOG
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_PRIVATE_PROPERTY_OFFSET \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_SPARSE_DATA \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_RPC_WRAPPERS \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_INCLASS \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_STANDARD_CONSTRUCTORS \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_PRIVATE_PROPERTY_OFFSET \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_SPARSE_DATA \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_RPC_WRAPPERS \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_INCLASS \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_GENERATED_BODY \
+#define NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_PRIVATE_PROPERTY_OFFSET \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_SPARSE_DATA \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_INCLASS_NO_PURE_DECLS \
-	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_13_ENHANCED_CONSTRUCTORS \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_PRIVATE_PROPERTY_OFFSET \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_SPARSE_DATA \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_INCLASS_NO_PURE_DECLS \
+	NigelsExpedition_Source_NigelsExpedition_DoorActor_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

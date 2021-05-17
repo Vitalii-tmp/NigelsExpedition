@@ -25,6 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UAudioComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ANigel::execLoadGame)
 	{
@@ -335,6 +336,10 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_ArtifactMenuWidgetClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ArtifactMenuWidgetClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Saving_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Saving;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -419,6 +424,14 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass = { "ArtifactMenuWidgetClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANigel, ArtifactMenuWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANigel_Statics::NewProp_Saving_MetaData[] = {
+		{ "Category", "Sound effects" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Nigel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANigel_Statics::NewProp_Saving = { "Saving", nullptr, (EPropertyFlags)0x0010000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANigel, Saving), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ANigel_Statics::NewProp_Saving_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANigel_Statics::NewProp_Saving_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANigel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_FollowCamera,
@@ -427,6 +440,7 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_MapMenuWidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_IsPushing,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_Saving,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANigel_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ANigel>::IsAbstract,
@@ -455,7 +469,7 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANigel, 3127107360);
+	IMPLEMENT_CLASS(ANigel, 44525367);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<ANigel>()
 	{
 		return ANigel::StaticClass();

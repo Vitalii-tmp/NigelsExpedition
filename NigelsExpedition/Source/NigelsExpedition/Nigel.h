@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Camera/CameraComponent.h"
+#include "Components/AudioComponent.h"
+#include "Sound/SoundCue.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
@@ -90,6 +92,9 @@ public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> ArtifactMenuWidgetClass;
 	class UUserWidget* ArtifactWidget;
+
+	UPROPERTY(EditAnywhere, Category = "Sound effects")
+		UAudioComponent* Saving;
 
 	
 private:
