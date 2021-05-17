@@ -339,6 +339,10 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DialogMenuWidgetClass_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DialogMenuWidgetClass;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DialogFirstLocWidgetClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_DialogFirstLocWidgetClass;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -432,6 +436,13 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANigel_Statics::NewProp_DialogMenuWidgetClass = { "DialogMenuWidgetClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANigel, DialogMenuWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ANigel_Statics::NewProp_DialogMenuWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANigel_Statics::NewProp_DialogMenuWidgetClass_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANigel_Statics::NewProp_DialogFirstLocWidgetClass_MetaData[] = {
+		{ "Category", "Nigel" },
+		{ "ModuleRelativePath", "Nigel.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ANigel_Statics::NewProp_DialogFirstLocWidgetClass = { "DialogFirstLocWidgetClass", nullptr, (EPropertyFlags)0x0014000000000001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ANigel, DialogFirstLocWidgetClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ANigel_Statics::NewProp_DialogFirstLocWidgetClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ANigel_Statics::NewProp_DialogFirstLocWidgetClass_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANigel_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_FollowCamera,
@@ -441,6 +452,7 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_IsPushing,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_ArtifactMenuWidgetClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_DialogMenuWidgetClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANigel_Statics::NewProp_DialogFirstLocWidgetClass,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANigel_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ANigel>::IsAbstract,
@@ -469,7 +481,7 @@ void EmptyLinkFunctionForGeneratedCodeNigel() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANigel, 1927805256);
+	IMPLEMENT_CLASS(ANigel, 3977416718);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<ANigel>()
 	{
 		return ANigel::StaticClass();

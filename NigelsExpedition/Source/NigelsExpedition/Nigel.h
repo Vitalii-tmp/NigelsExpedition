@@ -96,6 +96,10 @@ public:
 	UPROPERTY(EditAnywhere)
 		TSubclassOf<class UUserWidget> DialogMenuWidgetClass;
 	class UUserWidget* DialogMenuWidget;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<class UUserWidget> DialogFirstLocWidgetClass;
+	class UUserWidget* DialogFirstLocWidget;
 	
 private:
 	//dead check
@@ -106,6 +110,9 @@ private:
 
 	//first time menu map check
 	bool bCkeckFirstTimeMenuLvl = false;
+
+	//first time on lvl
+	bool bCheckFirstTimeFLocation = false;
 
 	UFUNCTION()
 	void SaveGame();

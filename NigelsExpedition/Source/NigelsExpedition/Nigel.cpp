@@ -157,6 +157,16 @@ void ANigel::BeginPlay()
 			DialogMenuWidget->AddToViewport();
 		}
 	}
+
+	if(DialogFirstLocWidgetClass)
+	{
+		DialogFirstLocWidget = CreateWidget<UUserWidget>(GetWorld(), DialogFirstLocWidgetClass);
+
+		if(DialogFirstLocWidget)
+		{
+			DialogFirstLocWidget->AddToViewport();
+		}
+	}
 	GetCapsuleComponent()->OnComponentBeginOverlap.AddDynamic(this, &ANigel::OnOverlapBegin);
 
 
@@ -174,16 +184,13 @@ void ANigel::BeginPlay()
 
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Check widget"));
 
-			
-
-			//Player controller
-			//APlayerController* MyController = GetWorld()->GetFirstPlayerController();
-
-			// //Set mouse events enable
-			// MyController->bEnableKeyboardEvents = false;
-
-			
 		}
+	}
+	if(UGameplayStatics::GetCurrentLevelName(this) == "FirstLocations" && bCheckFirstTimeFLocation){
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Check widget"));
+		DialogFirstLocWidget->SetVisibility(ESlateVisibility::Visible);
+
+		
 	}
 	if (bNAmericaArtifact) {
 		//Set first artifact visible(hide foreground layout)
@@ -198,6 +205,13 @@ void ANigel::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	if(DialogMenuWidget->Visibility == ESlateVisibility::Visible && DialogMenuWidget->GetWidgetFromName("text1")->Visibility == ESlateVisibility::Visible){
+		//Set game pause
+		//UGameplayStatics::SetGamePaused(GetWorld(), true);
+
+		bDead = true;
+	}
+
+	if(DialogFirstLocWidget->Visibility == ESlateVisibility::Visible && DialogFirstLocWidget->GetWidgetFromName("textFloc1")->Visibility == ESlateVisibility::Visible){
 		//Set game pause
 		//UGameplayStatics::SetGamePaused(GetWorld(), true);
 
@@ -314,9 +328,9 @@ void ANigel::OnActionEsc() {
 		UGameplayStatics::SetGamePaused(GetWorld(), false);
 	}
 
-	if(DialogMenuWidget->Visibility == ESlateVisibility::Visible){
-		DialogMenuWidget->SetVisibility(ESlateVisibility::Hidden);
-	}
+	// if(DialogMenuWidget->Visibility == ESlateVisibility::Visible){
+	// 	DialogMenuWidget->SetVisibility(ESlateVisibility::Hidden);
+	// }
 }
 
 //temporary method to load main manu by x key
@@ -349,6 +363,31 @@ void ANigel::OnActionEnter(){
 		//UGameplayStatics::SetGamePaused(GetWorld(), false);
 
 		bCkeckFirstTimeMenuLvl = false;
+		SaveGame();
+
+		bDead = false;
+	}
+
+	if(DialogFirstLocWidget->GetWidgetFromName("textFloc1")->Visibility == ESlateVisibility::Visible){
+		DialogFirstLocWidget->GetWidgetFromName("textFloc1")->SetVisibility(ESlateVisibility::Hidden);
+		DialogFirstLocWidget->GetWidgetFromName("textFloc2")->SetVisibility(ESlateVisibility::Visible);
+	}
+	else if(DialogFirstLocWidget->GetWidgetFromName("textFloc2")->Visibility == ESlateVisibility::Visible){
+		DialogFirstLocWidget->GetWidgetFromName("textFloc2")->SetVisibility(ESlateVisibility::Hidden);
+		DialogFirstLocWidget->GetWidgetFromName("textFloc3")->SetVisibility(ESlateVisibility::Visible);
+	}
+	else if(DialogFirstLocWidget->GetWidgetFromName("textFloc3")->Visibility == ESlateVisibility::Visible){
+		DialogFirstLocWidget->GetWidgetFromName("textFloc3")->SetVisibility(ESlateVisibility::Hidden);
+		DialogFirstLocWidget->GetWidgetFromName("textFloc4")->SetVisibility(ESlateVisibility::Visible);
+	}
+	else if(DialogFirstLocWidget->GetWidgetFromName("textFloc4")->Visibility == ESlateVisibility::Visible){
+		DialogFirstLocWidget->GetWidgetFromName("textFloc4")->SetVisibility(ESlateVisibility::Hidden);
+		DialogFirstLocWidget->GetWidgetFromName("textFloc5")->SetVisibility(ESlateVisibility::Visible);
+	}
+	else if(DialogFirstLocWidget->GetWidgetFromName("textFloc5")->Visibility == ESlateVisibility::Visible){
+		DialogFirstLocWidget->SetVisibility(ESlateVisibility::Hidden);
+
+		bCheckFirstTimeFLocation = false;
 		SaveGame();
 
 		bDead = false;
@@ -464,6 +503,8 @@ void ANigel::SaveGame()
 
 		//Set after checkpoint if artifact is pick
 		GameSaveInstance->isNAmericaArtifact = this->bNAmericaArtifact;
+
+		GameSaveInstance->isFirstTimeFLocation = true;
 	}
 	//Set false after first time game
 	GameSaveInstance->isFirstTimeMenuMap = this->bCkeckFirstTimeMenuLvl;
@@ -491,6 +532,8 @@ void ANigel::LoadGame()
 
 	//Set first time game in game instance
 	this->bCkeckFirstTimeMenuLvl = GameSaveInstance->isFirstTimeMenuMap;
+
+	this->bCheckFirstTimeFLocation = true;
 
 	//Log a message
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Loaded"));

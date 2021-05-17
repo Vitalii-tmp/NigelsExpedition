@@ -26,5 +26,8 @@ public:
 
 	UPROPERTY(EditAnywhere)
 		bool isFirstTimeMenuMap;
+
+	UPROPERTY(EditAnywhere)
+		bool isFirstTimeFLocation;
 	
 };
