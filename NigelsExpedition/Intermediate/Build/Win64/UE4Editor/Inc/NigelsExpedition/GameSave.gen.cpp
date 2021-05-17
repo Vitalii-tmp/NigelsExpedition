@@ -41,6 +41,16 @@ void EmptyLinkFunctionForGeneratedCodeGameSave() {}
 #endif
 		static void NewProp_isNAmericaArtifact_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isNAmericaArtifact;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_isFirstTimeMenuMap_MetaData[];
+#endif
+		static void NewProp_isFirstTimeMenuMap_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isFirstTimeMenuMap;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_isFirstTimeFLocation_MetaData[];
+#endif
+		static void NewProp_isFirstTimeFLocation_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_isFirstTimeFLocation;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -74,9 +84,33 @@ void EmptyLinkFunctionForGeneratedCodeGameSave() {}
 		((UGameSave*)Obj)->isNAmericaArtifact = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact = { "isNAmericaArtifact", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGameSave), &Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeMenuMap_MetaData[] = {
+		{ "Category", "GameSave" },
+		{ "ModuleRelativePath", "GameSave.h" },
+	};
+#endif
+	void Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeMenuMap_SetBit(void* Obj)
+	{
+		((UGameSave*)Obj)->isFirstTimeMenuMap = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeMenuMap = { "isFirstTimeMenuMap", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGameSave), &Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeMenuMap_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeMenuMap_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeMenuMap_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeFLocation_MetaData[] = {
+		{ "Category", "GameSave" },
+		{ "ModuleRelativePath", "GameSave.h" },
+	};
+#endif
+	void Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeFLocation_SetBit(void* Obj)
+	{
+		((UGameSave*)Obj)->isFirstTimeFLocation = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeFLocation = { "isFirstTimeFLocation", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(UGameSave), &Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeFLocation_SetBit, METADATA_PARAMS(Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeFLocation_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeFLocation_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UGameSave_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGameSave_Statics::NewProp_PlayerLocation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGameSave_Statics::NewProp_isNAmericaArtifact,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeMenuMap,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UGameSave_Statics::NewProp_isFirstTimeFLocation,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UGameSave_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UGameSave>::IsAbstract,
@@ -105,7 +139,7 @@ void EmptyLinkFunctionForGeneratedCodeGameSave() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UGameSave, 1755470578);
+	IMPLEMENT_CLASS(UGameSave, 3167827895);
 	template<> NIGELSEXPEDITION_API UClass* StaticClass<UGameSave>()
 	{
 		return UGameSave::StaticClass();

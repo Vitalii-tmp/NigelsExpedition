@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"E:\\repo\\NigelsExpedition\\NigelsExpedition\\Source\\NigelsExpedition\\NigelsExpedition.Build.cs",
-		"E:\\repo\\NigelsExpedition\\NigelsExpedition\\Source\\NigelsExpedition.Target.cs",
-		"E:\\repo\\NigelsExpedition\\NigelsExpedition\\Source\\NigelsExpeditionEditor.Target.cs"
+		"E:\\programming (zanachki)\\UnrealEngine\\NigelsExpedition\\7\\NigelsExpedition\\NigelsExpedition\\Source\\NigelsExpedition\\NigelsExpedition.Build.cs",
+		"E:\\programming (zanachki)\\UnrealEngine\\NigelsExpedition\\7\\NigelsExpedition\\NigelsExpedition\\Source\\NigelsExpedition.Target.cs",
+		"E:\\programming (zanachki)\\UnrealEngine\\NigelsExpedition\\7\\NigelsExpedition\\NigelsExpedition\\Source\\NigelsExpeditionEditor.Target.cs"
 	],
 	"EngineVersion": "4.26.2"
 }
