@@ -180,23 +180,19 @@ void ANigel::BeginPlay()
 	LoadGame();
 
 	if (UGameplayStatics::GetCurrentLevelName(this) == "MenuMap"){
+		//set location of character in menu 
 		this->SetActorLocation(FVector(72.f, 50.f, 200.f));
 
-		//Log a message
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("MenuMap"));
-
+		//check if first time in menu
 		if(bCkeckFirstTimeMenuLvl){
+			//set visibility menu dialog widget
 			DialogMenuWidget->SetVisibility(ESlateVisibility::Visible);
-
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Check widget"));
-
 		}
 	}
+	//check if first time in first location
 	if(UGameplayStatics::GetCurrentLevelName(this) == "FirstLocations" && bCheckFirstTimeFLocation){
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Check widget"));
-		DialogFirstLocWidget->SetVisibility(ESlateVisibility::Visible);
-
-		
+		//set dialog widget visible
+		DialogFirstLocWidget->SetVisibility(ESlateVisibility::Visible);		
 	}
 	if (bNAmericaArtifact) {
 		//Set first artifact visible(hide foreground layout)
@@ -211,16 +207,12 @@ void ANigel::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	if(DialogMenuWidget->Visibility == ESlateVisibility::Visible && DialogMenuWidget->GetWidgetFromName("text1")->Visibility == ESlateVisibility::Visible){
-		//Set game pause
-		//UGameplayStatics::SetGamePaused(GetWorld(), true);
-
+		//set walking disable
 		bDead = true;
 	}
 
 	if(DialogFirstLocWidget->Visibility == ESlateVisibility::Visible && DialogFirstLocWidget->GetWidgetFromName("textFloc1")->Visibility == ESlateVisibility::Visible){
-		//Set game pause
-		//UGameplayStatics::SetGamePaused(GetWorld(), true);
-
+		//set walking disable
 		bDead = true;
 	}
 }
@@ -237,6 +229,7 @@ void ANigel::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	//E key(using in main menu)
 	PlayerInputComponent->BindAction("ActionE", IE_Released, this, &ANigel::OnAction);
 
+	//Enter key for dialog widget
 	PlayerInputComponent->BindAction("ActionEnter", IE_Released, this, &ANigel::OnActionEnter).bExecuteWhenPaused = true;
 
 	//Temporary key actions
@@ -314,8 +307,6 @@ void ANigel::OnActionEsc() {
 
 		//Set pause false
 		UGameplayStatics::SetGamePaused(GetWorld(), false);
-
-		MapLevels->LoadLevel();
 	}
 
 	if (ArtifactWidget->Visibility == ESlateVisibility::Visible)
@@ -333,10 +324,6 @@ void ANigel::OnActionEsc() {
 		//Set pause false
 		UGameplayStatics::SetGamePaused(GetWorld(), false);
 	}
-
-	// if(DialogMenuWidget->Visibility == ESlateVisibility::Visible){
-	// 	DialogMenuWidget->SetVisibility(ESlateVisibility::Hidden);
-	// }
 }
 
 //temporary method to load main manu by x key
@@ -346,6 +333,8 @@ void ANigel::OnActionX()
 }
 
 void ANigel::OnActionEnter(){
+
+	//setting visibility of dialogs
 	if(DialogMenuWidget->GetWidgetFromName("text1")->Visibility == ESlateVisibility::Visible){
 		DialogMenuWidget->GetWidgetFromName("text1")->SetVisibility(ESlateVisibility::Hidden);
 		DialogMenuWidget->GetWidgetFromName("text2")->SetVisibility(ESlateVisibility::Visible);
@@ -365,12 +354,10 @@ void ANigel::OnActionEnter(){
 	else if(DialogMenuWidget->GetWidgetFromName("text5")->Visibility == ESlateVisibility::Visible){
 		DialogMenuWidget->SetVisibility(ESlateVisibility::Hidden);
 
-		//Set pause false
-		//UGameplayStatics::SetGamePaused(GetWorld(), false);
-
-		bCkeckFirstTimeMenuLvl = false;
+		//bCkeckFirstTimeMenuLvl = false;
 		SaveGame();
 
+		//set walking enable
 		bDead = false;
 	}
 
@@ -393,9 +380,10 @@ void ANigel::OnActionEnter(){
 	else if(DialogFirstLocWidget->GetWidgetFromName("textFloc5")->Visibility == ESlateVisibility::Visible){
 		DialogFirstLocWidget->SetVisibility(ESlateVisibility::Hidden);
 
-		bCheckFirstTimeFLocation = false;
+		//bCheckFirstTimeFLocation = false;
 		SaveGame();
 
+		//set walking enable
 		bDead = false;
 	}
 }
@@ -462,7 +450,6 @@ void ANigel::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherAc
 
 	if (OtherActor->ActorHasTag("CheckPoint"))
 	{
-		
 		SaveGame();
 	}
 
@@ -500,7 +487,6 @@ void ANigel::OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActo
 
 void ANigel::SaveGame()
 {
-
 	Saving->Play();
 
 	//Create an instance of GameSave class
@@ -513,16 +499,14 @@ void ANigel::SaveGame()
 
 		//Set after checkpoint if artifact is pick
 		GameSaveInstance->isNAmericaArtifact = this->bNAmericaArtifact;
-
-		GameSaveInstance->isFirstTimeFLocation = this->bCheckFirstTimeFLocation;
+		
+		//Set after first time false
+		GameSaveInstance->isFirstTimeFLocation = true;//this->bCheckFirstTimeFLocation;
 	}
 	//Set false after first time game
-	GameSaveInstance->isFirstTimeMenuMap = this->bCkeckFirstTimeMenuLvl;
+	GameSaveInstance->isFirstTimeMenuMap = true;//this->bCkeckFirstTimeMenuLvl;
 	//Save the game save instance
 	UGameplayStatics::SaveGameToSlot(GameSaveInstance, TEXT("FirstSlot"), 0);
-
-	//Log a message
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Saved"));
 }
 
 void ANigel::LoadGame()
@@ -541,10 +525,8 @@ void ANigel::LoadGame()
 	this->bNAmericaArtifact = GameSaveInstance->isNAmericaArtifact;
 
 	//Set first time game in game instance
-	this->bCkeckFirstTimeMenuLvl = GameSaveInstance->isFirstTimeMenuMap;
+	this->bCkeckFirstTimeMenuLvl = true;//GameSaveInstance->isFirstTimeMenuMap;
 
-	this->bCheckFirstTimeFLocation = GameSaveInstance->isFirstTimeFLocation;
-
-	//Log a message
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, TEXT("Loaded"));
+	//Set first time in lvl in game instance
+	this->bCheckFirstTimeFLocation = true;//GameSaveInstance->isFirstTimeFLocation;
 }
